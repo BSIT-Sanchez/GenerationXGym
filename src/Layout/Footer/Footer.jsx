@@ -85,9 +85,9 @@ function Footer() {
           ))
         }
         <div className="">
-          <Link to='/' className='flex justify-start items-center'>
-            <img src='/logo.svg' alt='logo'/>
-            <h1>Fitness Gym</h1>
+          <Link to='/' className="flex justify-center items-center gap-1">
+            <img src="/logo.jpg" alt="logo" width={40} height={20} className="object-cover rounded-full"/>
+            <h1>Generation X Gym </h1>
           </Link>
           <ul>
             

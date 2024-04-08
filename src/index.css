@@ -55,4 +55,15 @@ body{
     padding-right: 30px;
     padding-left: 30px;
   }
+  .marginTops{
+    margin-top: 20px;
+  }
+  .imagebg{
+    background: url(/images/imagebg.jpg) no-repeat center center/cover;
+  
+  }
+  .opacity{
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+  }
 }

@@ -6,6 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '360px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1280px',
+      '2xl': '1536px'
+    },
     colors: {
       'bgFooter': '#141b23',
       'fontColor': '#ffffff',

@@ -16,6 +16,10 @@ const Header = () => {
   }
   const hover = 'hover:text-bgButton transitions dark:text-fontColor';
   const Hover = ({isActive}) => (isActive ? 'text-bgButton' : hover);
+
+  const subhover = 'hover:text-bgButton transitions dark:text-fontColor';
+  const mainHover = ({isActive}) => (isActive ? 'text-bgButton bg-[#a7f3d0]' : subhover);
+
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -50,9 +54,9 @@ const Header = () => {
     <div className="bg-bgHeader p-2 w-full shadow-lg fixed mb-10 z-40 dark:bg-bgFooter dark:text-fontColor">
       <div className='flex justify-between items-center container mx-auto relative'>
         <div className="flex justify-center items-center text-black font-bold text-xl">
-          <Link to='/' className="flex justify-center items-center">
-            <img src="/logo.svg" alt="logo" width={40} height={20}/>
-            <h1>Fitness Gym </h1>
+          <Link to='/' className="flex justify-center items-center gap-1">
+            <img src="/logo.jpg" alt="logo" width={40} height={20} className="object-cover rounded-full"/>
+            <h1>Generation X Gym </h1>
           </Link>
           
         </div>
@@ -61,7 +65,7 @@ const Header = () => {
           <NavLink to='/instructor' className={Hover}>Intructor</NavLink>
           <NavLink to='/Upper' className={Hover}>Classes</NavLink>
           <NavLink to='/about' className={Hover}>About</NavLink>
-          <NavLink to='/sign-up' className="bg-bgButton p-2 text-fontColor rounded-md">Sign Up</NavLink>
+          <NavLink to='/login' className="bg-bgButton p-2 text-fontColor rounded-md">Sign Up</NavLink>
         </div>
         <div className="sm:hidden">
           <HiOutlineMenuAlt3  onClick={Handler} className="w-10 h-9 bg-bgButton text-lg font-normal p-1 rounded-md cursor-pointer" />
@@ -86,12 +90,12 @@ const Header = () => {
 
               
                 </div>
-                <div className="flex flex-col relative w-full pl-3 ">
-                  <NavLink to='/' className={`${Hover}`}>Home</NavLink>
-                  <NavLink to='/instructor' className={Hover}>Intructor</NavLink>
-                  <NavLink to='/Upper'className={Hover}>Classes</NavLink>
-                  <NavLink to='/about'className={Hover}>About</NavLink>
-                  <NavLink to='/sign-up' className=" text-fontColor rounded-md">Sign Up</NavLink>                 
+                <div className="flex flex-col relative w-full p-3 ">
+                  <NavLink to='/' className={mainHover}>Home</NavLink>
+                  <NavLink to='/instructor' className={mainHover}>Intructor</NavLink>
+                  <NavLink to='/Upper'className={mainHover}>Classes</NavLink>
+                  <NavLink to='/about'className={mainHover}>About</NavLink>
+                  <NavLink to='/login' className=" ">Sign Up</NavLink>                 
                 </div>
               { profile &&
                 <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md">
