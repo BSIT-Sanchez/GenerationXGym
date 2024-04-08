@@ -11,13 +11,13 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    if((username === 'admin@gmail.com' && password === 'admin123') || (username === 'user@gmail.com' && password === 'user123') || (username === 'instrutor@gmail.com' && password === 'instructor123')){
+    if((username === 'admin@gmail.com' && password === 'admin123') || (username === 'user@gmail.com' && password === 'user123') || (username === 'ins@gmail.com' && password === 'ins123')){
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
      
       if(username === 'admin@gmail.com'){      
         navigate('/adminDashboard');
-      }else if(username === 'instrutor@gmail.com'){
+      }else if(username === 'ins@gmail.com'){
         navigate('/instructorDashboard');
       }
       
@@ -99,7 +99,7 @@ const Login = () => {
                   </div>
                   {errorMessage && <p className="error text-[14px]">{errorMessage}</p>}
                   
-                  <div className="col-span-2 text-[#000]">
+                  <div className="col-span-2 text-[#000] flex justify-start items-center">
                     <input type="checkbox" className="rounded-sm"/>
                     <span className="p-1 text-[12px] text-fontColor">I agree <span className="text-bgButton ">Terms of Service</span> and Privacy Policy </span>
                   </div>
