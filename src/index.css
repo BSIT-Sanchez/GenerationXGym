@@ -66,4 +66,7 @@ body{
     background-color: rgba(0,0,0,0.5);
     box-shadow: inset -5px -5px rgba(0,0,0,0.5);
   }
+  .error{
+    color: #ef4444;
+  }
 }

@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import HomeScreen from './Pages/HomeScreen'
 import AdminDashboard from './Pages/AdminDashboard'
+import InstructorDashboard from './Pages/InstructorDashboard'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import UpperList from './Pages/UpperList'
@@ -19,6 +20,7 @@ import Planks from './Pages/Core/Planks'
 import Snatch from './Pages/Compound/Snatch'
 import KettebellSwings from './Pages/Function/KettlebellSwings'
 import DumbbellFlyes from './Pages/Isolation/DumbbellFlyes'
+
 
 function App() {
   Aos.init();
@@ -48,6 +50,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/adminDashboard' element={<AdminDashboard/>}/>
+      <Route path='/instructorDashboard' element={<InstructorDashboard/>}/>
     </Routes>
   )
 }

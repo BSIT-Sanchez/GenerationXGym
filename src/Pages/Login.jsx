@@ -11,14 +11,17 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = () => {
-    if((username === 'admin@gmail.com' && password === 'admin123') || (username === 'user@gmail.com' && password === 'user123')){
+    if((username === 'admin@gmail.com' && password === 'admin123') || (username === 'user@gmail.com' && password === 'user123') || (username === 'instrutor@gmail.com' && password === 'instructor123')){
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
      
-      if(username === 'admin@gmail.com'){
-       
+      if(username === 'admin@gmail.com'){      
         navigate('/adminDashboard');
-      }else{
+      }else if(username === 'instrutor@gmail.com'){
+        navigate('/instructorDashboard');
+      }
+      
+      else{
         navigate('/');
       }
     }else{
@@ -73,7 +76,7 @@ const Login = () => {
                 
               </div>
 
-              <form className="grid md:grid-cols-2 grid-cols-1 justify-start items-start 2xl:pl-8 2xl:pt-6 pl-4">
+              <div className="grid md:grid-cols-2 grid-cols-1 justify-start items-start 2xl:pl-8 2xl:pt-6 pl-4">
             
                   <div className="col-span-2 2xl:w-[105%]">
                     <label className="py-1 text-fontColor">Username/Email:</label>
@@ -86,7 +89,7 @@ const Login = () => {
                 
 
 
-                  <div className="col-span-2 2xl:w-[105%] mb-4">
+                  <div className="col-span-2 2xl:w-[105%] mb-2">
                     <label className="py-1 text-fontColor">Password:</label>
                     <div className="p-1 rounded-md bg-fontColor border-bgButton border 2xl:w-[90%] w-[95%] my-2">
                       <input type="password" placeholder='password' value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password"
@@ -94,6 +97,7 @@ const Login = () => {
 
                     </div>
                   </div>
+                  {errorMessage && <p className="error text-[14px]">{errorMessage}</p>}
                   
                   <div className="col-span-2 text-[#000]">
                     <input type="checkbox" className="rounded-sm"/>
@@ -104,10 +108,10 @@ const Login = () => {
                              
 
                 <button onClick={handleLogin} className="2xl:w-[95%] w-[95%] col-span-2  bg-bgButton p-2 rounded-md mt-4 hover:bg-bgFooter transition-all ease-in-out outline-none hover:text-fontColor font-medium">Login</button>
-                {errorMessage && <p>{errorMessage}</p>}
+               
                     
                 
-              </form>
+              </div>
 
             </div>
           </div>
