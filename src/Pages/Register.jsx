@@ -1,6 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { LiaFacebook } from "react-icons/lia";
 import {Link} from 'react-router-dom'
+
 const Register = () => {
   return(
     <div className=' imagebg 2xl:h-screen sm:h-[120vh] xs:h-[135vh] text-bgFooter'>
@@ -14,7 +15,7 @@ const Register = () => {
                 <img src='/logo.jpg' alt='logo' className="object-cover rounded-full shadow-lg 2xl:w-[150px] 2xl:h-[150px] w-[80px] h-[80px]"/>
                 
               </div>
-              <div className='w-full 2xl:flex flex-col justify-center items-center pl-10 font-semibold text-fontColor 2xl:text-lg hidden md:block lg:flex lg:flex-col lg:justify-center text-fontColor lg:pr-16 lg:text-[1.5rem]'>
+              <div className='w-full 2xl:flex flex-col justify-center items-center pl-10 font-semibold text-fontColor 2xl:text-lg hidden md:block lg:flex lg:flex-col lg:justify-center lg:pr-16 lg:text-[1.5rem]'>
                 <p>Start for Free and get</p>
                 <p>attracted offers</p>
               </div>
@@ -32,14 +33,12 @@ const Register = () => {
               <div className='flex 2xl:pl-20 2xl:pt-6 2xl:gap-2 gap-3 text-[12px] mt-4 sm:pl-3 xs:px-5 xs:text-[10px] lg:justify-center w-full'>
                 <div className="flex justify-center items-center gap-1 border p-2 border-bgButton rounded-sm cursor-pointer">                 
                     <FcGoogle className="h-5 w-5"/>
-                    <h1 className="text-fontColor">Sign up with Google</h1>
-                               
+                    <h1 className="text-fontColor">Sign up with Google</h1>                              
                 </div>
                 
                 <div className="flex justify-center items-center gap-1 border p-2 border-[#3b5998] bg-[#3b5998] rounded-sm cursor-pointer">                 
                     <LiaFacebook className="text-fontColor h-5 w-5" />
                     <h1 className="text-fontColor">Sign up with Facebook</h1>
-                               
                 </div>
 
               </div>
@@ -100,13 +99,13 @@ const Register = () => {
                     </div>
                   </div>
                   
-                  <div className="col-span-2 md:col-span-2 mb-4">
+                  <div className="col-span-2 md:col-span-2 mb-4 flex justify-start items-center">
                     <input type="checkbox" className="rounded-sm"/>
                     <span className="p-1 text-fontColor text-[12px]">I agree <span className="text-bgButton ">Terms of Service</span> and Privacy Policy </span>
                   </div>
                 
 
-                             
+                            
 
                 <button type="submit" className="2xl:w-[95%] w-[95%] col-span-2  bg-bgButton p-2 rounded-md mt-4 hover:bg-bgFooter transition-all ease-in-out outline-none hover:text-fontColor font-medium">Register</button>
                     
