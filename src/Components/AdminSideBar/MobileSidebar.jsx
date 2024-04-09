@@ -1,6 +1,6 @@
 const MobileSidebar = ({isOpen}) => {
   return(
-    <div className={`bg-bgButton col-span-2 1xs:block mt-1 md:hidden h-screen transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-[150%]'}`}>
+    <div className={`bg-bgButton col-span-2 absolute top-6 left-0 w-full 1xs:block mt-1 md:hidden h-screen transform transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-[150%]'}`}>
         <div className="container mx-auto">
           hellosdods
         </div>
