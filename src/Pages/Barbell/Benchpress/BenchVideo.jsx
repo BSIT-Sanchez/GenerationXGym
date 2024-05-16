@@ -9,7 +9,7 @@ function BenchVideo() {
       <video
         loop
         autoPlay
-
+        controls
         ref={videoRef}
         src="/videos/beachpress.mp4"
         className='w-full h-[20rem] 1xs:-mt-12 md:mt-0 rounded-sm'
