@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { categories } from "./CategoryList"
+import { categories } from "../CategoryList"
 import { IconContext } from "react-icons";
 
 const CategorySideBar = () => {

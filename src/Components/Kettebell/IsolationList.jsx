@@ -1,7 +1,7 @@
 
 
 import { Link } from "react-router-dom"
-import CompoundMenu from "./CompoundMenu";
+import IsolationMenu from "./IsolationMenu";
 
 
 export const CategoryData = [
@@ -12,7 +12,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'johm dou',
     category: '/upper-body',
-    subcategories: ['Compound Body']
+    subcategories: ['Isolation Body']
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'andoy',
     category: '/lower-body',
-    subcategories: ['Compound Body']
+    subcategories: ['Isolation Body']
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/core',
-    subcategories: ['Compund Body']
+    subcategories: ['Isolation Body']
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/functional-movements',
-    subcategories: ['Compound Body']
+    subcategories: ['Isolation Body']
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/isolation-exercises',
-    subcategories: ['Compound Body']
+    subcategories: ['Isolation Body']
   },
   {
     id: 6,
@@ -57,17 +57,17 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/compound-exercises',
-    subcategories: ['Compound Body']
+    subcategories: ['Isolation Body']
   },
 ];
 
 
 
-const CompoundList = () => {
+const IsolationList = () => {
   return(
-    <CompoundMenu>
+    <IsolationMenu>
       <div className="">       
-        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Compound Body</h2>
+        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Kettebell</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {
@@ -103,7 +103,7 @@ const CompoundList = () => {
     </div>
         
       
-    </CompoundMenu>
+    </IsolationMenu>
   )
 }
-export default CompoundList
+export default IsolationList

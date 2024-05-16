@@ -67,7 +67,7 @@ const LowerList = () => {
   return(
     <LowerMenu>
       <div className="">       
-        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Lower Body</h2>
+        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Body Weight</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {

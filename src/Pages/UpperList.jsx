@@ -1,4 +1,4 @@
-import SideBarList from "../Components/SideBarList"
+import SideBarList from "../Components/Barbell/BarbellList"
 import Layout from '../Layout/Layout'
 
 const UpperList = () => {

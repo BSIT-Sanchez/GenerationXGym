@@ -1,43 +1,48 @@
 import { BsCollectionFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
-import { FaBicycle, FaDumbbell, FaHeartbeat, FaRunning, FaSwimmer } from "react-icons/fa";
+import { FaDumbbell, FaRunning } from "react-icons/fa";
+import { IoBarbell } from "react-icons/io5";
+import { MdOutlineCable } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { PiMedalBold, PiPersonSimpleBikeBold } from "react-icons/pi";
 
+
+// eslint-disable-next-line react-refresh/only-export-components
 export const categories = [
   {
     _id: '1',
-    name: 'Upper',
-    icon: <FaDumbbell/>,
-   
+    name: 'Barbell',
+    icon: < IoBarbell/>,
+  
   },
   {
     _id: '2',
-    name: 'Lower',
+    name: 'BodyWeight',
     icon: <FaRunning/>,
     
   },
   { 
     _id: '3',
-    name: 'Core',
-    icon: <FaBicycle/>,
+    name: 'Cable',
+    icon: <MdOutlineCable />,
     
   },
   {
     _id: '4',
-    name: 'Function',
-    icon: <FaSwimmer/>,
+    name: 'Dumbbell',
+    icon: <FaDumbbell/>,
     
   },
   {
     _id: '5',
-    name: 'Isolation',
-    icon: <FaHeartbeat/>,
+    name: 'Kettebell',
+    icon: <PiMedalBold/>,
     
   },
   {
     _id: '6',
-    name: 'Comp',
-    icon: <FaDumbbell/>,
+    name: 'Machine',
+    icon: <PiPersonSimpleBikeBold />,
     
   }
 ];

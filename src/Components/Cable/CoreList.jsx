@@ -1,7 +1,6 @@
 
-
 import { Link } from "react-router-dom"
-import IsolationMenu from "./IsolationMenu";
+import CoreMenu from "./CoreMenu";
 
 
 export const CategoryData = [
@@ -12,7 +11,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'johm dou',
     category: '/upper-body',
-    subcategories: ['Isolation Body']
+    subcategories: ['Core Body']
   },
   {
     id: 2,
@@ -21,7 +20,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'andoy',
     category: '/lower-body',
-    subcategories: ['Isolation Body']
+    subcategories: ['Core Body']
   },
   {
     id: 3,
@@ -30,7 +29,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/core',
-    subcategories: ['Isolation Body']
+    subcategories: ['Core Body']
   },
   {
     id: 4,
@@ -39,7 +38,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/functional-movements',
-    subcategories: ['Isolation Body']
+    subcategories: ['Core Body']
   },
   {
     id: 5,
@@ -48,7 +47,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/isolation-exercises',
-    subcategories: ['Isolation Body']
+    subcategories: ['Core Body']
   },
   {
     id: 6,
@@ -57,17 +56,17 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/compound-exercises',
-    subcategories: ['Isolation Body']
+    subcategories: ['Core Body']
   },
 ];
 
 
 
-const IsolationList = () => {
+const CoreList = () => {
   return(
-    <IsolationMenu>
+    <CoreMenu>
       <div className="">       
-        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Isolation Body</h2>
+        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Cable</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {
@@ -103,7 +102,7 @@ const IsolationList = () => {
     </div>
         
       
-    </IsolationMenu>
+    </CoreMenu>
   )
 }
-export default IsolationList
+export default CoreList

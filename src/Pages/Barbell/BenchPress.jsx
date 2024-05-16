@@ -4,13 +4,28 @@ import { FaUserTie } from "react-icons/fa";
 import { FaClock } from "react-icons/fa6";
 import { FaClipboardCheck } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
-const BenchPress = () => {
+
+
+const BenchPress = () => { 
+  const [toggle, setToggle] = useState(false);
+
+  const handler = () => {
+    setToggle(!toggle);
+  }
+
+  const [selectedOption, setSelectedOption] = useState('');
+
+  const handleOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+  
   return(
     <Layout>
-      <div className="container mx-auto adjustPadding pb-10">
+      <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <BenchImage/>
@@ -76,14 +91,66 @@ const BenchPress = () => {
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <Link to="/" className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</Link>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              
             </div>
             </div>
-           
-           
+                      
           </div>
 
         </div>
+        {toggle && 
+          <div className="absolute 1xs:top-[300px] md:top-[100px] 1xs:w-[92%] 1xs:left-[15px] md:left-[400px] right-0 md:w-[30%] bg-bgButton h-[290px] 1xs:shadow-lg md:shadow-lg md:rounded-lg 1xs:rounded-md flex justify-start items-start flex-col">   
+            <div className="flex justify-center items-center flex-col w-full pt-2 pb-6">
+              <h1 className="font-bold">Payment</h1>
+              <p className="text-center text-[#d1d5db] text-sm">Select a payment option</p>
+            </div> 
+
+            <div className="flex gap-1 w-full justify-center items-center ">
+              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <div className="w-full">
+                <h1>Beach Press</h1>
+                <p>₱500</p>
+
+              </div>
+            
+            </div>       
+    
+            <div className="flex justify-center items-center mt-6 pl-[60px] 1xs:pl-[30px] md:gap-[60px] 1xs:gap-[50px]">
+                  <label className="flex justify-center items-center gap-1">
+                    <input
+                      type="radio"
+                      value="Gcash"
+                      checked={selectedOption === 'Gcash'}
+                      onChange={handleOptionChange}
+                    />
+                    <img src="/images/gcash.png" alt="gcash" className="w-15 h-5 object-contain"/>
+                  </label>
+                  <label className="flex justify-center items-center gap-1">
+                    <input
+                      type="radio"
+                      value="Paymaya"
+                      checked={selectedOption === 'Paymaya'}
+                      onChange={handleOptionChange}
+                    />
+                      <img src="/images/paymaya.png" alt="paymaya" className="w-15 h-10 object-contain"/>
+                </label>
+                
+                
+            </div>
+
+            <div className="flex justify-center items-center gap-8 w-full mt-10">
+              <button className="p-1 bg-[#dc2626] rounded-sm font-normal text-[#fff]" onClick={handler}>Cancel</button>
+              <Link to="/Barbell/BenchPress/video" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
+
+            </div>
+
+
+
+          </div>
+        }
+
+        
       </div>
     </Layout>
   )

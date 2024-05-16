@@ -1,6 +1,7 @@
 
+
 import { Link } from "react-router-dom"
-import CoreMenu from "./CoreMenu";
+import CompoundMenu from "./CompoundMenu";
 
 
 export const CategoryData = [
@@ -11,7 +12,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'johm dou',
     category: '/upper-body',
-    subcategories: ['Core Body']
+    subcategories: ['Compound Body']
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'andoy',
     category: '/lower-body',
-    subcategories: ['Core Body']
+    subcategories: ['Compound Body']
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/core',
-    subcategories: ['Core Body']
+    subcategories: ['Compund Body']
   },
   {
     id: 4,
@@ -38,7 +39,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/functional-movements',
-    subcategories: ['Core Body']
+    subcategories: ['Compound Body']
   },
   {
     id: 5,
@@ -47,7 +48,7 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/isolation-exercises',
-    subcategories: ['Core Body']
+    subcategories: ['Compound Body']
   },
   {
     id: 6,
@@ -56,17 +57,17 @@ export const CategoryData = [
     price: '₱1500',
     teacher: 'Lando Sanchez',
     category: '/compound-exercises',
-    subcategories: ['Core Body']
+    subcategories: ['Compound Body']
   },
 ];
 
 
 
-const CoreList = () => {
+const CompoundList = () => {
   return(
-    <CoreMenu>
+    <CompoundMenu>
       <div className="">       
-        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Core Body</h2>
+        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Machine</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {
@@ -102,7 +103,7 @@ const CoreList = () => {
     </div>
         
       
-    </CoreMenu>
+    </CompoundMenu>
   )
 }
-export default CoreList
+export default CompoundList

@@ -1,6 +1,6 @@
 
 import Layout from '../Layout/Layout'
-import CoreList from '../Components/Core/CoreList'
+import CoreList from '../Components/Cable/CoreList'
 
 const CoreScreen = () => {
   return(

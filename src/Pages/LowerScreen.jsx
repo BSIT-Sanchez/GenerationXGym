@@ -1,6 +1,6 @@
 
 import Layout from '../Layout/Layout'
-import LowerList from '../Components/Lower/LowerList'
+import LowerList from '../Components/BodyWeight/LowerList'
 
 const LowerScreen = () => {
   return(

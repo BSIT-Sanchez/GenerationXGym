@@ -1,4 +1,4 @@
-import CategorySideBar from "./CategorySideBar"
+import CategorySideBar from "./BarbellSide"
 
 const CategoryMenu = ({children}) => {
   return(

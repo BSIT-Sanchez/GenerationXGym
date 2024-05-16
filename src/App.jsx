@@ -14,12 +14,13 @@ import CoreScreen from './Pages/CoreScreen'
 import FunctionScreen from './Pages/FunctionScreen'
 import IsolationScreen from './Pages/IsolationScreen'
 import CompoundScreen from './Pages/CompoundScreen'
-import BenchPress from './Pages/Upper/BenchPress'
-import Squats from './Pages/Lower/Squats'
-import Planks from './Pages/Core/Planks'
-import Snatch from './Pages/Compound/Snatch'
-import KettebellSwings from './Pages/Function/KettlebellSwings'
-import DumbbellFlyes from './Pages/Isolation/DumbbellFlyes'
+import BenchPress from './Pages/Barbell/BenchPress'
+import Squats from './Pages/BodyWeight/Squats'
+import Planks from './Pages/Cable/Planks'
+import Snatch from './Pages/Machine/Snatch'
+import KettebellSwings from './Pages/Dumbbell/KettlebellSwings'
+import DumbbellFlyes from './Pages/Kettebell/DumbbellFlyes'
+import BenchVideo from './Pages/Barbell/BenchVideo'
 
 
 function App() {
@@ -27,23 +28,24 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<HomeScreen/>}/>
-      <Route path='/Upper' element={<UpperList/>}/>
-      <Route path='/Upper/BenchPress' element={<BenchPress/>}/>
+      <Route path='/Barbell' element={<UpperList/>}/>
+      <Route path='/Barbell/BenchPress' element={<BenchPress/>}/>
+      <Route path='/Barbell/BenchPress/video' element={<BenchVideo/>}/>
 
-      <Route path='/Lower' element={<LowerScreen/>}/>
-      <Route path='/Lower/Squats' element={<Squats/>}/>
+      <Route path='/BodyWeight' element={<LowerScreen/>}/>
+      <Route path='/BodyWeight/Squats' element={<Squats/>}/>
 
-      <Route path='/Core' element={<CoreScreen/>}/>
-      <Route path='/Core/Planks' element={<Planks/>}/>
+      <Route path='/Cable' element={<CoreScreen/>}/>
+      <Route path='/Cable/Planks' element={<Planks/>}/>
 
-      <Route path='/Function' element={<FunctionScreen/>}/>
-      <Route path='/Function/KettlebellSwings' element={<KettebellSwings/>}/>
+      <Route path='/Dumbbell' element={<FunctionScreen/>}/>
+      <Route path='/Dumbbell/KettlebellSwings' element={<KettebellSwings/>}/>
 
-      <Route path='/Isolation' element={<IsolationScreen/>}/>
-      <Route path='/Isolation/DumbbellFlyes' element={<DumbbellFlyes/>}/>
+      <Route path='/Kettebell' element={<IsolationScreen/>}/>
+      <Route path='/Kettebell/DumbbellFlyes' element={<DumbbellFlyes/>}/>
 
-      <Route path='/Comp' element={<CompoundScreen/>}/>
-      <Route path='/Comp/Snatch' element={<Snatch/>}/>
+      <Route path='/Machine' element={<CompoundScreen/>}/>
+      <Route path='/Machine/Snatch' element={<Snatch/>}/>
 
       <Route path='/instructor' element={<InstructorScreen/>}/>
       <Route path='/about' element={<AboutScreen/>}/>

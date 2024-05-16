@@ -2,6 +2,7 @@ import { BsBookmarkStarFill } from "react-icons/bs"
 import { Link } from "react-router-dom";
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const InstructorList = [
   {
     id: 1,
@@ -9,8 +10,8 @@ export const InstructorList = [
     image: '/images/img1.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Upper',
-    subcategories: ['Upper Body']
+    category: '/Barbell',
+    subcategories: ['Barbell Exercise']
   },
   {
     id: 2,
@@ -18,8 +19,8 @@ export const InstructorList = [
     image: '/images/img2.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Lower',
-    subcategories: ['Lower Body']
+    category: '/BodyWeight',
+    subcategories: ['BodyWeight Exercise']
   },
   {
     id: 3,
@@ -27,8 +28,8 @@ export const InstructorList = [
     image: '/images/img3.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Core',
-    subcategories: ['Core']
+    category: '/Cable',
+    subcategories: ['Cable Exercise']
   },
   {
     id: 4,
@@ -36,8 +37,8 @@ export const InstructorList = [
     image: '/images/img2.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Function',
-    subcategories: ['Functional Movements']
+    category: '/Dumbbell',
+    subcategories: ['Dumbbell Exercise']
   },
   {
     id: 5,
@@ -45,8 +46,8 @@ export const InstructorList = [
     image: '/images/img5.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Isolation',
-    subcategories: ['Isolationa Exercises']
+    category: '/Kettebell',
+    subcategories: ['Kettebell Exercise']
   },
   {
     id: 6,
@@ -54,8 +55,8 @@ export const InstructorList = [
     image: '/images/img2.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Comp',
-    subcategories: ['Compound Exercises']
+    category: '/Machine',
+    subcategories: ['Machine Exercise']
   },
 ];
 

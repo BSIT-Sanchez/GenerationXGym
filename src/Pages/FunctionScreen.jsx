@@ -1,6 +1,6 @@
 
 import Layout from '../Layout/Layout'
-import FunctionList from '../Components/Function/FunctionList'
+import FunctionList from '../Components/Dumbbell/FunctionList'
 
 const FunctionScreen = () => {
   return(

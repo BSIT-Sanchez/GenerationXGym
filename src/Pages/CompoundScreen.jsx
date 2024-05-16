@@ -1,6 +1,6 @@
 
 import Layout from '../Layout/Layout'
-import CompoundList from '../Components/Compound/CompoundList'
+import CompoundList from '../Components/Machine/CompoundList'
 
 const CompoundScreen = () => {
   return(

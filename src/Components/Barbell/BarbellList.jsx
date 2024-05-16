@@ -1,5 +1,5 @@
 
-import CategoryMenu from "./CategoryMenu"
+import CategoryMenu from "./BarbellMenu"
 import { Link } from "react-router-dom"
 
 
@@ -7,11 +7,11 @@ export const CategoryData = [
   {
     id: 1,
     name: 'Beach Press',
-    image: '/images/img1.jpg',
+    image: '/images/beachPress.jpg',
     price: '₱1500',
     teacher: 'johm dou',
-    category: '/Upper/BenchPress',
-    subcategories: ['Upper Body']
+    category: '/Barbell/BenchPress',
+    subcategories: ['Chest']
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const CategoryData = [
     image: '/images/img2.jpg',
     price: '₱1500',
     teacher: 'andoy',
-    category: '/Upper/PushUps',
+    category: '/Barbell/PushUps',
     subcategories: ['Upper Body']
   },
   {
@@ -28,7 +28,7 @@ export const CategoryData = [
     image: '/images/img3.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Upper/PullUps',
+    category: '/Barbell/PullUps',
     subcategories: ['Upper Body']
   },
   {
@@ -37,7 +37,7 @@ export const CategoryData = [
     image: '/images/img2.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Upper/ShoulderPress',
+    category: '/Barbell/ShoulderPress',
     subcategories: ['Upper Body']
   },
   {
@@ -46,7 +46,7 @@ export const CategoryData = [
     image: '/images/img5.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Upper/BicepCurls',
+    category: '/Barbell/BicepCurls',
     subcategories: ['Upper Body']
   },
   {
@@ -55,7 +55,7 @@ export const CategoryData = [
     image: '/images/img2.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/Upper/TricepDips',
+    category: '/Barbell/TricepDips',
     subcategories: ['Upper Body']
   },
 ];
@@ -66,7 +66,7 @@ const SideBarList = () => {
   return(
     <CategoryMenu>
       <div className="">       
-        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Upper Body</h2>
+        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Barbell</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {
