@@ -116,7 +116,7 @@ const BenchPress = () => {
             
             </div>       
     
-            <div className="flex justify-center items-center mt-6 pl-[60px] 1xs:pl-[30px] md:gap-[60px] 1xs:gap-[50px]">
+            <div className="flex justify-center items-center mt-6 md:pl-[60px] 1xs:pl-[30px] md:gap-[60px] 1xs:gap-[50px]">
                   <label className="flex justify-center items-center gap-1">
                     <input
                       type="radio"
