@@ -1,5 +1,5 @@
 import BenchImage from "./BenchImage"
-import Layout from "../../Layout/Layout"
+import Layout from "../../../Layout/Layout"
 import { FaUserTie } from "react-icons/fa";
 import { FaClock } from "react-icons/fa6";
 import { FaClipboardCheck } from "react-icons/fa";
@@ -29,12 +29,12 @@ const BenchPress = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <BenchImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-14">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Bench Press</h1>
                 <p className="font-bold">₱500</p>
               </div>           
-              <p className="mx-2 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam, vero adipisci beatae eos facere accusantium repellendus sapiente repudiandae libero cupiditate commodi aspernatur debitis sed hic expedita fuga molestiae sit.</p>
+              <p className="mx-2 mt-2">The bench press is more than just an exercise; its a cornerstone of strength training that offers numerous physical and psychological benefits.</p>
             </div>
           </div>
           <div>

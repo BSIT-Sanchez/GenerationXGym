@@ -93,7 +93,7 @@ const Header = () => {
                 <div className="flex flex-col relative w-full p-3 ">
                   <NavLink to='/' className={mainHover}>Home</NavLink>
                   <NavLink to='/instructor' className={mainHover}>Intructor</NavLink>
-                  <NavLink to='/Upper'className={mainHover}>Classes</NavLink>
+                  <NavLink to='/Barbell'className={mainHover}>Classes</NavLink>
                   <NavLink to='/about'className={mainHover}>About</NavLink>
                   <NavLink to='/login' className=" ">Sign Up</NavLink>                 
                 </div>

@@ -14,13 +14,13 @@ import CoreScreen from './Pages/CoreScreen'
 import FunctionScreen from './Pages/FunctionScreen'
 import IsolationScreen from './Pages/IsolationScreen'
 import CompoundScreen from './Pages/CompoundScreen'
-import BenchPress from './Pages/Barbell/BenchPress'
+import BenchPress from './Pages/Barbell/Benchpress/BenchPress'
 import Squats from './Pages/BodyWeight/Squats'
 import Planks from './Pages/Cable/Planks'
 import Snatch from './Pages/Machine/Snatch'
 import KettebellSwings from './Pages/Dumbbell/KettlebellSwings'
 import DumbbellFlyes from './Pages/Kettebell/DumbbellFlyes'
-import BenchVideo from './Pages/Barbell/BenchVideo'
+import BenchDetails from './Pages/Barbell/Benchpress/BenchDetails'
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
       <Route path='/' element={<HomeScreen/>}/>
       <Route path='/Barbell' element={<UpperList/>}/>
       <Route path='/Barbell/BenchPress' element={<BenchPress/>}/>
-      <Route path='/Barbell/BenchPress/video' element={<BenchVideo/>}/>
+      <Route path='/Barbell/BenchPress/video' element={<BenchDetails/>}/>
 
       <Route path='/BodyWeight' element={<LowerScreen/>}/>
       <Route path='/BodyWeight/Squats' element={<Squats/>}/>
