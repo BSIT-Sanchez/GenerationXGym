@@ -7,57 +7,57 @@ import FunctionMenu from "./FunctionMenu";
 export const CategoryData = [
   {
     id: 1,
-    name: 'Beach Press',
-    image: '/images/img1.jpg',
-    price: '₱1500',
+    name: 'Step-Up',
+    image: '/images/stepup.jpg',
+    price: '₱3500',
     teacher: 'johm dou',
-    category: '/upper-body',
-    subcategories: ['Function Body']
+    category: '/Dumbbell/Step-Up',
+    subcategories: ['Hips']
   },
   {
     id: 2,
-    name: 'Squats',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Lateral Raise',
+    image: '/images/lateralraise.jpg',
+    price: '₱2800',
     teacher: 'andoy',
-    category: '/lower-body',
-    subcategories: ['Function Body']
+    category: '/Dumbbel/LateralRaise',
+    subcategories: ['Shoulders']
   },
   {
     id: 3,
-    name: 'Planks',
-    image: '/images/img3.jpg',
+    name: 'Fly',
+    image: '/images/fly.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/core',
-    subcategories: ['Function Body']
+    category: '/Dumbbell/Fly',
+    subcategories: ['Chest']
   },
   {
     id: 4,
-    name: 'Kettlebell Swings',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Arnold Press',
+    image: '/images/arnoldpress.jpg',
+    price: '₱3200',
     teacher: 'Lando Sanchez',
-    category: '/functional-movements',
-    subcategories: ['Function Body']
+    category: '/Dumbbell/ArnoldPress',
+    subcategories: ['Shoulders']
   },
   {
     id: 5,
-    name: 'Dumbbel Flyes',
-    image: '/images/img5.jpg',
-    price: '₱1500',
+    name: 'Pull Over',
+    image: '/images/pullover.jpg',
+    price: '₱2400',
     teacher: 'Lando Sanchez',
-    category: '/isolation-exercises',
-    subcategories: ['Function Body']
+    category: '/Dumbbell/PullOver',
+    subcategories: ['Chest']
   },
   {
     id: 6,
-    name: 'Snatch',
-    image: '/images/img2.jpg',
+    name: 'Kick Back',
+    image: '/images/kickback.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/compound-exercises',
-    subcategories: ['Function Body']
+    category: '/Dumbbell/KickBack',
+    subcategories: ['Triceps']
   },
 ];
 

@@ -6,57 +6,57 @@ import CoreMenu from "./CoreMenu";
 export const CategoryData = [
   {
     id: 1,
-    name: 'Beach Press',
-    image: '/images/img1.jpg',
-    price: '₱1500',
-    teacher: 'johm dou',
-    category: '/upper-body',
-    subcategories: ['Core Body']
+    name: 'Cable Curl',
+    image: '/images/cablecurl.jpg',
+    price: '₱2990',
+    teacher: 'Nathaniel Ursa',
+    category: '/Cable/CableCurl',
+    subcategories: ['Biceps']
   },
   {
     id: 2,
-    name: 'Squats',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Pull Down',
+    image: '/images/pulldown.jpg',
+    price: '₱2100',
     teacher: 'andoy',
-    category: '/lower-body',
-    subcategories: ['Core Body']
+    category: '/Cable/PullDown',
+    subcategories: ['Back']
   },
   {
     id: 3,
-    name: 'Planks',
-    image: '/images/img3.jpg',
+    name: 'Biceps Curl',
+    image: '/images/bicepscurl.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/core',
-    subcategories: ['Core Body']
+    category: '/Cable/BicepsCurl',
+    subcategories: ['Biceps']
   },
   {
     id: 4,
-    name: 'Kettlebell Swings',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Hammer Curl',
+    image: '/images/hammercurl.jpg',
+    price: '₱4500',
     teacher: 'Lando Sanchez',
-    category: '/functional-movements',
-    subcategories: ['Core Body']
+    category: '/Cable/HammerCurl',
+    subcategories: ['Forearms']
   },
   {
     id: 5,
-    name: 'Dumbbel Flyes',
-    image: '/images/img5.jpg',
-    price: '₱1500',
+    name: 'Push Down',
+    image: '/images/pushdown.jpg',
+    price: '₱2600',
     teacher: 'Lando Sanchez',
-    category: '/isolation-exercises',
-    subcategories: ['Core Body']
+    category: '/Cable/PushDown',
+    subcategories: ['Back']
   },
   {
     id: 6,
-    name: 'Snatch',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Seated Row',
+    image: '/images/seatedrow.jpg',
+    price: '₱1700',
     teacher: 'Lando Sanchez',
-    category: '/compound-exercises',
-    subcategories: ['Core Body']
+    category: '/Cable/SeatedRow',
+    subcategories: ['Back']
   },
 ];
 

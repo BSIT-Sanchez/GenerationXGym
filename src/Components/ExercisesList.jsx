@@ -25,7 +25,7 @@ export const InstructorList = [
   {
     id: 3,
     name: 'CableCurl',
-    image: '/images/img3.jpg',
+    image: '/images/cablecurl.jpg',
     price: '₱2990',
     teacher: 'Nathaniel Ursua',
     category: '/Cable',
@@ -34,7 +34,7 @@ export const InstructorList = [
   {
     id: 4,
     name: 'Step-Up',
-    image: '/images/img2.jpg',
+    image: '/images/stepup.jpg',
     price: '₱3500',
     teacher: 'Julius Dela Torre',
     category: '/Dumbbell',
@@ -43,7 +43,7 @@ export const InstructorList = [
   {
     id: 5,
     name: 'KettlebellSwing',
-    image: '/images/img5.jpg',
+    image: '/images/kettlebellswing.jpg',
     price: '₱2100',
     teacher: 'Alexa Dumo',
     category: '/Kettlebell',

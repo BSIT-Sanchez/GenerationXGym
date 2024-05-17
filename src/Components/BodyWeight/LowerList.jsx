@@ -37,28 +37,28 @@ export const CategoryData = [
     id: 4,
     name: 'Front Plank',
     image: '/images/frontplank.jpg',
-    price: '₱1500',
-    teacher: 'Nathaniel Ursua',
+    price: '₱2500',
+    teacher: 'Trevor Jace',
     category: '/BWeight/FrontPlank',
     subcategories: ['Waist']
   },
   {
     id: 5,
-    name: 'Calf Raises',
-    image: '/images/img5.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Lower/CalfRaises',
-    subcategories: ['Lower Body']
+    name: 'Chest Dip',
+    image: '/images/chestdip.jpg',
+    price: '₱2300',
+    teacher: 'Julius Dela Torre',
+    category: '/BWeight/ChestDip',
+    subcategories: ['Chest']
   },
   {
     id: 6,
-    name: 'Hamstring Curls',
-    image: '/images/img2.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Lower/HamstringCurls',
-    subcategories: ['Lower Body']
+    name: 'Chin-Up',
+    image: '/images/chinup.jpg',
+    price: '₱4000',
+    teacher: 'Trevor Jace',
+    category: '/BWeight/ChinUp',
+    subcategories: ['Back']
   },
 ];
 

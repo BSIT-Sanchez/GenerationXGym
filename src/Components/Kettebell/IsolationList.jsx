@@ -7,57 +7,57 @@ import IsolationMenu from "./IsolationMenu";
 export const CategoryData = [
   {
     id: 1,
-    name: 'Beach Press',
-    image: '/images/img1.jpg',
-    price: '₱1500',
+    name: 'KettlebellSwing',
+    image: '/images/kettlebellswing.jpg',
+    price: '₱2100',
     teacher: 'johm dou',
-    category: '/upper-body',
-    subcategories: ['Isolation Body']
+    category: '/Kettlebell/KettlebellSwing',
+    subcategories: ['Harmstrings']
   },
   {
     id: 2,
-    name: 'Squats',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Snatch',
+    image: '/images/snatch.jpg',
+    price: '₱2300',
     teacher: 'andoy',
-    category: '/lower-body',
-    subcategories: ['Isolation Body']
+    category: '/Kettlebell/Snatch',
+    subcategories: ['Weightlifting']
   },
   {
     id: 3,
-    name: 'Planks',
-    image: '/images/img3.jpg',
-    price: '₱1500',
+    name: 'Seasaw Press',
+    image: '/images/seasawpress.jpg',
+    price: '₱3100',
     teacher: 'Lando Sanchez',
-    category: '/core',
-    subcategories: ['Isolation Body']
+    category: '/Kettlebell/SeasawPress',
+    subcategories: ['Shoulders']
   },
   {
     id: 4,
-    name: 'Kettlebell Swings',
-    image: '/images/img2.jpg',
+    name: 'Burpee',
+    image: '/images/burpee.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/functional-movements',
-    subcategories: ['Isolation Body']
+    category: '/Kettlebell/Burpee',
+    subcategories: ['Plyometrics']
   },
   {
     id: 5,
-    name: 'Dumbbel Flyes',
-    image: '/images/img5.jpg',
-    price: '₱1500',
+    name: 'Double Jerk',
+    image: '/images/doublejerk.jpg',
+    price: '₱2400',
     teacher: 'Lando Sanchez',
-    category: '/isolation-exercises',
-    subcategories: ['Isolation Body']
+    category: '/Kettlebell/DoubleJerk',
+    subcategories: ['Shoulders']
   },
   {
     id: 6,
-    name: 'Snatch',
-    image: '/images/img2.jpg',
+    name: 'Bent Press',
+    image: '/images/bentpress.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/compound-exercises',
-    subcategories: ['Isolation Body']
+    category: '/Kettlebell/BentPress',
+    subcategories: ['Waist']
   },
 ];
 
