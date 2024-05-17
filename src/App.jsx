@@ -14,13 +14,19 @@ import CoreScreen from './Pages/CoreScreen'
 import FunctionScreen from './Pages/FunctionScreen'
 import IsolationScreen from './Pages/IsolationScreen'
 import CompoundScreen from './Pages/CompoundScreen'
-import BenchPress from './Pages/Barbell/Benchpress/BenchPress'
-import Squats from './Pages/BodyWeight/Squats'
-import Planks from './Pages/Cable/Planks'
-import Snatch from './Pages/Machine/Snatch'
-import KettebellSwings from './Pages/Dumbbell/KettlebellSwings'
-import DumbbellFlyes from './Pages/Kettebell/DumbbellFlyes'
+import BenchPress from './Pages/Barbell/Benchpress/BenchPress' 
 import BenchDetails from './Pages/Barbell/Benchpress/BenchDetails'
+import CrunchFloor from './Pages/BodyWeight/CrunchFloor/CrunchFloor'
+import CrunchDetails from './Pages/BodyWeight/CrunchFloor/CrunchDetails'
+import CableCurl from './Pages/Cable/CableCurl/CableCurl'
+import CableCurlDetails from './Pages/Cable/CableCurl/CableCurlDetails'
+import StepUp from './Pages/Dumbbell/StepUp/StepUp'
+import StepUpDetails from './Pages/Dumbbell/StepUp/StepUpDetails'
+import KettebellSwing from './Pages/Kettebell/kettebellSwing/KettebellSwing'
+import KettebellSwingDetails from './Pages/Kettebell/kettebellSwing/KettebellSwingDetails'
+import SmithSquatDetails from './Pages/Machine/smithsquat/SmithSquatDetails'
+import SmithSquat from './Pages/Machine/smithsquat/SmithSquat'
+
 
 
 function App() {
@@ -33,19 +39,24 @@ function App() {
       <Route path='/Barbell/BenchPress/video' element={<BenchDetails/>}/>
 
       <Route path='/BodyWeight' element={<LowerScreen/>}/>
-      <Route path='/BodyWeight/Squats' element={<Squats/>}/>
+      <Route path='/BodyWeight/CrunchFloor' element={<CrunchFloor/>}/>
+      <Route path='/BodyWeight/CrunchFloor/video' element={<CrunchDetails/>}/>
 
       <Route path='/Cable' element={<CoreScreen/>}/>
-      <Route path='/Cable/Planks' element={<Planks/>}/>
+      <Route path='/Cable/CableCurl' element={<CableCurl/>}/>
+      <Route path='/Cable/CableCurl/video' element={<CableCurlDetails/>}/>
 
       <Route path='/Dumbbell' element={<FunctionScreen/>}/>
-      <Route path='/Dumbbell/KettlebellSwings' element={<KettebellSwings/>}/>
+      <Route path='/Dumbbell/Step-Up' element={<StepUp/>}/>
+      <Route path='/Dumbbell/Step-Up/video' element={<StepUpDetails/>}/>
 
-      <Route path='/Kettebell' element={<IsolationScreen/>}/>
-      <Route path='/Kettebell/DumbbellFlyes' element={<DumbbellFlyes/>}/>
+      <Route path='/Kettlebell' element={<IsolationScreen/>}/>
+      <Route path='/Kettlebell/KettlebellSwing' element={<KettebellSwing/>}/>
+      <Route path='/Kettlebell/KettlebellSwing/video' element={<KettebellSwingDetails/>}/>
 
       <Route path='/Machine' element={<CompoundScreen/>}/>
-      <Route path='/Machine/Snatch' element={<Snatch/>}/>
+      <Route path='/Machine/SmithSquat' element={<SmithSquat/>}/>
+      <Route path='/Machine/SmithSquat/video' element={<SmithSquatDetails/>}/>
 
       <Route path='/instructor' element={<InstructorScreen/>}/>
       <Route path='/about' element={<AboutScreen/>}/>

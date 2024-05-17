@@ -35,7 +35,7 @@ export const categories = [
   },
   {
     _id: '5',
-    name: 'Kettebell',
+    name: 'Kettlebell',
     icon: <PiMedalBold/>,
     
   },

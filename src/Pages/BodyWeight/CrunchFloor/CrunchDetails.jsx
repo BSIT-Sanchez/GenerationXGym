@@ -1,25 +1,23 @@
-import KettlebellSwingsImage from "./KettlebellSwingsImage"
-import Layout from "../../Layout/Layout"
+import Layout from "../../../Layout/Layout"
 import { FaUserTie } from "react-icons/fa";
 import { FaClock } from "react-icons/fa6";
-import { FaClipboardCheck } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+import CrunchVideo from "./CrunchVideo";
+import AutoScroll from "./AutoScroll";
 
-
-const KettlebellSwings = () => {
+const  CrunchDetails = () => { 
   return(
     <Layout>
-      <div className="container mx-auto adjustPadding pb-10">
+      <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <KettlebellSwingsImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-14">
+            <CrunchVideo/>
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
               <div className="flex justify-between items-center mx-2 ">
-                <h1 className="font-bold">KettlebellSwings</h1>
+                <h1 className="font-bold">Crunch Floor</h1>
                 <p className="font-bold">₱2000</p>
               </div>           
-              <p className="mx-2 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi quisquam, vero adipisci beatae eos facere accusantium repellendus sapiente repudiandae libero cupiditate commodi aspernatur debitis sed hic expedita fuga molestiae sit.</p>
+              <p className="mx-2 mt-2">Crunch Fitness aims to create a welcoming and energetic environment for members of all fitness levels, offering a variety of options to help individuals achieve their fitness goals.</p>
             </div>
           </div>
           <div>
@@ -32,7 +30,7 @@ const KettlebellSwings = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Julius Dela Torre
+                    Jobert Camo
                   </h1>
                 </div>                             
               </div>
@@ -45,7 +43,7 @@ const KettlebellSwings = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    1hr 20 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -58,34 +56,29 @@ const KettlebellSwings = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Hard
+                    Easy
                   </h2>
                 </div>                             
               </div>
 
-              <div className="flex justify-between items-center mt-2 ">
-                <div className="flex justify-center items-center gap-2">
-                  <FaClipboardCheck className="text-bgButton"/>
-                  <p>Enrolled</p>
-                </div>
-                
-                <div>
-                  <h2 className="font-medium">
-                    1k Students
-                  </h2>
-                </div>                             
+              <div className="flex flex-col justify-between items-center mt-10 ">
+                <h1 className="font-bold text-[16px] text-[#f97316]">FOLLOW THE GUIDELINES</h1>
+                <AutoScroll/>
               </div>
-              <div className="flex mt-4 justify-center items-center ">
-              <Link to="/" className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</Link>
+              
             </div>
-            </div>
-           
-           
+
+          
+                      
           </div>
 
         </div>
+        
+
+        
       </div>
     </Layout>
   )
 }
-export default KettlebellSwings
+export default  CrunchDetails
+

@@ -67,7 +67,7 @@ const IsolationList = () => {
   return(
     <IsolationMenu>
       <div className="">       
-        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Kettebell</h2>
+        <h2 className="font-bold mb-3 text-lg text-bgButton flex justify-center items-center">Kettebell Exercises</h2>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {

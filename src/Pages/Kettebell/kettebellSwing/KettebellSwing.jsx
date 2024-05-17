@@ -1,4 +1,4 @@
-import BenchImage from "./BenchImage"
+import KettebellSwingImage from './KettebellSwingImage'
 import Layout from "../../../Layout/Layout"
 import { FaUserTie } from "react-icons/fa";
 import { FaClock } from "react-icons/fa6";
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 
 
-const BenchPress = () => { 
+const KettebellSwing = () => { 
   const [toggle, setToggle] = useState(false);
 
   const handler = () => {
@@ -29,13 +29,13 @@ const BenchPress = () => {
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <BenchImage/>
+            <KettebellSwingImage/>
             <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
-                <h1 className="font-bold">Bench Press</h1>
-                <p className="font-bold">₱1500</p>
+                <h1 className="font-bold">Kettlebell Swing</h1>
+                <p className="font-bold">₱2100</p>
               </div>           
-              <p className="mx-2 mt-2">The bench press is more than just an exercise; its a cornerstone of strength training that offers numerous physical and psychological benefits.</p>
+              <p className="mx-2 mt-2">Kettlebell Swing is a dynamic, full-body exercise that primarily targets the muscles of the posterior chain, including the glutes, hamstrings, and lower back, while also engaging the core, shoulders, and grip. </p>
             </div>
           </div>
           <div>
@@ -48,7 +48,7 @@ const BenchPress = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                  Alexa Dumo
                   </h1>
                 </div>                             
               </div>
@@ -61,7 +61,7 @@ const BenchPress = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    1hr 34 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -74,7 +74,7 @@ const BenchPress = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Chest
+                    Harmstrings
                   </h2>
                 </div>                             
               </div>
@@ -87,7 +87,7 @@ const BenchPress = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Intermediate
+                    Hard
                   </h2>
                 </div>                             
               </div>
@@ -123,8 +123,8 @@ const BenchPress = () => {
             <div className="flex gap-1 w-full justify-center items-center ">
               <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
-                <h1>Beach Press</h1>
-                <p>₱500</p>
+                <h1>Kettlebell Swing</h1>
+                <p>₱2100</p>
 
               </div>
             
@@ -155,7 +155,7 @@ const BenchPress = () => {
 
             <div className="flex justify-center items-center gap-8 w-full mt-10">
               <button className="p-1 bg-[#dc2626] rounded-sm font-normal text-[#fff]" onClick={handler}>Cancel</button>
-              <Link to="/Barbell/BenchPress/video" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
+              <Link to="/Kettlebell/KettlebellSwing/video" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
 
             </div>
 
@@ -169,4 +169,4 @@ const BenchPress = () => {
     </Layout>
   )
 }
-export default BenchPress
+export default  KettebellSwing
