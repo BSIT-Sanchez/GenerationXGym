@@ -124,8 +124,8 @@ const SmithSquat = () => {
             <div className="flex gap-1 w-full justify-center items-center ">
               <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
-                <h1>Step-Up</h1>
-                <p>₱3500</p>
+                <h1>Smith Squat</h1>
+                <p>₱4500</p>
 
               </div>
             
