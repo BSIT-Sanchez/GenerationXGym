@@ -9,54 +9,54 @@ export const CategoryData = [
     name: 'Beach Press',
     image: '/images/beachPress.jpg',
     price: '₱1500',
-    teacher: 'johm dou',
+    teacher: 'Felipe Santiago',
     category: '/Barbell/BenchPress',
     subcategories: ['Chest']
   },
   {
     id: 2,
-    name: 'Push-ups',
-    image: '/images/img2.jpg',
-    price: '₱1500',
-    teacher: 'andoy',
-    category: '/Barbell/PushUps',
-    subcategories: ['Upper Body']
+    name: 'Full Squat',
+    image: '/images/fullsquat.jpg',
+    price: '₱2360',
+    teacher: 'Alexa Dumo',
+    category: '/Barbell/FullSquat',
+    subcategories: ['Quadriceps']
   },
   {
     id: 3,
-    name: 'Pull-ups',
-    image: '/images/img3.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Barbell/PullUps',
-    subcategories: ['Upper Body']
+    name: 'Deadlift',
+    image: '/images/deadlift.jpg',
+    price: '₱3100',
+    teacher: 'Trevor Jace',
+    category: '/Barbell/Deadlift',
+    subcategories: ['Hips']
   },
   {
     id: 4,
-    name: 'Shoulder Press',
-    image: '/images/img2.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Barbell/ShoulderPress',
-    subcategories: ['Upper Body']
+    name: 'Reverse Curl',
+    image: '/images/reversecurl.jpg',
+    price: '₱1200',
+    teacher: 'Julius Dela Torre',
+    category: '/Barbell/ReverseCurl',
+    subcategories: ['Forearms']
   },
   {
     id: 5,
-    name: 'Bicep Curls',
-    image: '/images/img5.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Barbell/BicepCurls',
-    subcategories: ['Upper Body']
+    name: 'Front Squat',
+    image: '/images/frontsquat.jpg',
+    price: '₱300',
+    teacher: 'Nathaniel Ursua',
+    category: '/Barbell/FrontSquat',
+    subcategories: ['Hips']
   },
   {
     id: 6,
-    name: 'Tricep Dips',
-    image: '/images/img2.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Barbell/TricepDips',
-    subcategories: ['Upper Body']
+    name: 'Incline Row',
+    image: '/images/inclinerow.jpg',
+    price: '₱2500',
+    teacher: 'Jobert Camo',
+    category: '/Barbell/InclineRow',
+    subcategories: ['Back']
   },
 ];
 

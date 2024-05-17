@@ -7,39 +7,39 @@ import LowerMenu from "./LowerMenu";
 export const CategoryData = [
   {
     id: 1,
-    name: 'Lunges',
-    image: '/images/img1.jpg',
-    price: '₱1500',
-    teacher: 'johm dou',
-    category: '/Lower/Lunges',
-    subcategories: ['Lower Body']
+    name: 'Crunch Floor',
+    image: '/images/crunchfloor.webp',
+    price: '₱2000',
+    teacher: 'Jobert Camo',
+    category: '/BodyWeight/CrunchFloor',
+    subcategories: ['Waist']
   },
   {
     id: 2,
-    name: 'Squats',
-    image: '/images/img2.jpg',
-    price: '₱1500',
-    teacher: 'andoy',
-    category: '/Squats',
-    subcategories: ['Lower Body']
+    name: 'Pull-Up',
+    image: '/images/pullup.jpg',
+    price: '₱3000',
+    teacher: 'Alexa Dumo',
+    category: '/BodyWeight/PullUp',
+    subcategories: ['Back']
   },
   {
     id: 3,
-    name: 'Deadlifts',
-    image: '/images/img3.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Lower/Deadlifts',
-    subcategories: ['Lower Body']
+    name: 'Push-Up',
+    image: '/images/pushup.webp',
+    price: '₱1000',
+    teacher: 'Julius Dela Torre',
+    category: '/BodyWeight/PushUp',
+    subcategories: ['Chest']
   },
   {
     id: 4,
-    name: 'Leg Press',
-    image: '/images/img2.jpg',
+    name: 'Front Plank',
+    image: '/images/frontplank.jpg',
     price: '₱1500',
-    teacher: 'Lando Sanchez',
-    category: '/Lower/LegPress',
-    subcategories: ['Lower Body']
+    teacher: 'Nathaniel Ursua',
+    category: '/BodyWeight/FrontPlank',
+    subcategories: ['Waist']
   },
   {
     id: 5,

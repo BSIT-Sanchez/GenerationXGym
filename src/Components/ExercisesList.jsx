@@ -7,7 +7,7 @@ export const InstructorList = [
   {
     id: 1,
     name: 'BenchPress',
-    image: '/images/img1.jpg',
+    image: '/images/beachPress.jpg',
     price: '₱1500',
     teacher: 'Felipe Santiago',
     category: '/Barbell',
@@ -16,7 +16,7 @@ export const InstructorList = [
   {
     id: 2,
     name: 'CrunchFloor',
-    image: '/images/img2.jpg',
+    image: '/images/crunchfloor.webp',
     price: '₱2000',
     teacher: 'Jobert Camo',
     category: '/BodyWeight',
@@ -54,7 +54,7 @@ export const InstructorList = [
     name: 'SmithSquat ',
     image: '/images/img2.jpg',
     price: '₱4500',
-    teacher: 'Jrevor Jace',
+    teacher: 'Trevor Jace',
     category: '/Machine',
     subcategories: ['Machine Exercise']
   },
