@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { PiMedalBold, PiPersonSimpleBikeBold } from "react-icons/pi";
 
 
-// eslint-disable-next-line react-refresh/only-export-components
+
 export const categories = [
   {
     _id: '1',
@@ -17,7 +17,7 @@ export const categories = [
   },
   {
     _id: '2',
-    name: 'BodyWeight',
+    name: 'BWeight',
     icon: <FaRunning/>,
     
   },

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import LowerMenu from "./LowerMenu";
 
 
+
 export const CategoryData = [
   {
     id: 1,
@@ -11,7 +12,7 @@ export const CategoryData = [
     image: '/images/crunchfloor.webp',
     price: '₱2000',
     teacher: 'Jobert Camo',
-    category: '/BodyWeight/CrunchFloor',
+    category: '/BWeight/CrunchFloor',
     subcategories: ['Waist']
   },
   {
@@ -20,7 +21,7 @@ export const CategoryData = [
     image: '/images/pullup.jpg',
     price: '₱3000',
     teacher: 'Alexa Dumo',
-    category: '/BodyWeight/PullUp',
+    category: '/BWeight/PullUp',
     subcategories: ['Back']
   },
   {
@@ -29,7 +30,7 @@ export const CategoryData = [
     image: '/images/pushup.webp',
     price: '₱1000',
     teacher: 'Julius Dela Torre',
-    category: '/BodyWeight/PushUp',
+    category: '/BWeight/PushUp',
     subcategories: ['Chest']
   },
   {
@@ -38,7 +39,7 @@ export const CategoryData = [
     image: '/images/frontplank.jpg',
     price: '₱1500',
     teacher: 'Nathaniel Ursua',
-    category: '/BodyWeight/FrontPlank',
+    category: '/BWeight/FrontPlank',
     subcategories: ['Waist']
   },
   {

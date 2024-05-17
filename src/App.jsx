@@ -38,9 +38,9 @@ function App() {
       <Route path='/Barbell/BenchPress' element={<BenchPress/>}/>
       <Route path='/Barbell/BenchPress/video' element={<BenchDetails/>}/>
 
-      <Route path='/BodyWeight' element={<LowerScreen/>}/>
-      <Route path='/BodyWeight/CrunchFloor' element={<CrunchFloor/>}/>
-      <Route path='/BodyWeight/CrunchFloor/video' element={<CrunchDetails/>}/>
+      <Route path='/BWeight' element={<LowerScreen/>}/>
+      <Route path='/BWeight/CrunchFloor' element={<CrunchFloor/>}/>
+      <Route path='/BWeight/CrunchFloor/video' element={<CrunchDetails/>}/>
 
       <Route path='/Cable' element={<CoreScreen/>}/>
       <Route path='/Cable/CableCurl' element={<CableCurl/>}/>

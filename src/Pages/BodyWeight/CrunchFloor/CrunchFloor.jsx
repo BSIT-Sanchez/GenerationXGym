@@ -155,7 +155,7 @@ const CrunchFloor = () => {
 
             <div className="flex justify-center items-center gap-8 w-full mt-10">
               <button className="p-1 bg-[#dc2626] rounded-sm font-normal text-[#fff]" onClick={handler}>Cancel</button>
-              <Link to="/BodyWeight/CrunchFloor/video" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
+              <Link to="/BWeight/CrunchFloor/video" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
 
             </div>
 

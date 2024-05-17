@@ -3,6 +3,7 @@ import CategoryMenu from "./BarbellMenu"
 import { Link } from "react-router-dom"
 
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const CategoryData = [
   {
     id: 1,
