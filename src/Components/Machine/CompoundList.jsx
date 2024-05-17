@@ -7,57 +7,57 @@ import CompoundMenu from "./CompoundMenu";
 export const CategoryData = [
   {
     id: 1,
-    name: 'Beach Press',
-    image: '/images/img1.jpg',
-    price: '₱1500',
+    name: 'Smith Squat',
+    image: '/images/smithmachine.jpg',
+    price: '₱4500',
     teacher: 'johm dou',
-    category: '/upper-body',
-    subcategories: ['Compound Body']
+    category: '/Machine/SmithSquat',
+    subcategories: ['Hips']
   },
   {
     id: 2,
-    name: 'Squats',
-    image: '/images/img2.jpg',
+    name: 'Calf Raise',
+    image: '/images/calfraise.jpg',
     price: '₱1500',
     teacher: 'andoy',
-    category: '/lower-body',
-    subcategories: ['Compound Body']
+    category: '/Machine/CalfRaise',
+    subcategories: ['Calves']
   },
   {
     id: 3,
-    name: 'Planks',
-    image: '/images/img3.jpg',
-    price: '₱1500',
+    name: 'Rear Lunge',
+    image: '/images/rearlunge.jpg',
+    price: '₱4300',
     teacher: 'Lando Sanchez',
-    category: '/core',
-    subcategories: ['Compund Body']
+    category: '/Machine/RearLunge',
+    subcategories: ['Quadriceps']
   },
   {
     id: 4,
-    name: 'Kettlebell Swings',
-    image: '/images/img2.jpg',
-    price: '₱1500',
+    name: 'Drag Curl',
+    image: '/images/dragcurl.jpg',
+    price: '₱2500',
     teacher: 'Lando Sanchez',
-    category: '/functional-movements',
-    subcategories: ['Compound Body']
+    category: '/Machine/DragCurl',
+    subcategories: ['Biceps']
   },
   {
     id: 5,
-    name: 'Dumbbel Flyes',
-    image: '/images/img5.jpg',
-    price: '₱1500',
+    name: 'Hex Press',
+    image: '/images/hexpress.jpg',
+    price: '₱3500',
     teacher: 'Lando Sanchez',
-    category: '/isolation-exercises',
-    subcategories: ['Compound Body']
+    category: '/Machine/HexPress',
+    subcategories: ['Chest']
   },
   {
     id: 6,
-    name: 'Snatch',
-    image: '/images/img2.jpg',
+    name: 'Sumo Squat',
+    image: '/images/sumo.jpg',
     price: '₱1500',
     teacher: 'Lando Sanchez',
-    category: '/compound-exercises',
-    subcategories: ['Compound Body']
+    category: '/Machine/SumoSquat',
+    subcategories: ['Hips']
   },
 ];
 

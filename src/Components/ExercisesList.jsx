@@ -19,7 +19,7 @@ export const InstructorList = [
     image: '/images/crunchfloor.webp',
     price: '₱2000',
     teacher: 'Jobert Camo',
-    category: '/BodyWeight',
+    category: '/BWeight',
     subcategories: ['BodyWeight Exercise']
   },
   {
@@ -52,7 +52,7 @@ export const InstructorList = [
   {
     id: 6,
     name: 'SmithSquat ',
-    image: '/images/img2.jpg',
+    image: '/images/smithmachine.jpg',
     price: '₱4500',
     teacher: 'Trevor Jace',
     category: '/Machine',
