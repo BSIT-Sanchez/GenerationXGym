@@ -46,6 +46,30 @@ import ChestDip from './Pages/BodyWeight/ChestDip/ChestDip'
 import ChestDipDetails from './Pages/BodyWeight/ChestDip/ChestDipDetails'
 import ChinUp from './Pages/BodyWeight/ChinUp/ChinUp'
 import ChinUpDetails from './Pages/BodyWeight/ChinUp/ChinUpDetails'
+import PullDown from './Pages/Cable/PullDown/PullDown'
+import PullDownDetails from './Pages/Cable/PullDown/PullDownDetails'
+import BicepsCurl from './Pages/Cable/BicepsCurl/BicepsCurl'
+import BicepsCurlDetails from './Pages/Cable/BicepsCurl/BicepsCurl.Details'
+import HammerCurl from './Pages/Cable/HammerCurl/HammerCurl'
+import HammerCurlDetails from './Pages/Cable/HammerCurl/HammerCurlDetails'
+import PushDown from './Pages/Cable/PushDown/PushDown'
+import PushDownDetails from './Pages/Cable/PushDown/PushDownDetails'
+import SeatedRow from './Pages/Cable/SeatedRow/SeatedRow'
+import SeatedRowDetails from './Pages/Cable/SeatedRow/SeatedRowDetails'
+import LateralRaise from './Pages/Dumbbell/LateralRaise/LateralRaise'
+import LateralRaiseDetails from './Pages/Dumbbell/LateralRaise/LateralRaiseDetails'
+import Fly from './Pages/Dumbbell/Fly/Fly'
+import FlyDetails from './Pages/Dumbbell/Fly/FlyDetails'
+import ArnoldPress from './Pages/Dumbbell/ArnoldPress/ArnoldPress'
+import ArnoldPressDetails from './Pages/Dumbbell/ArnoldPress/ArnoldPressDetails'
+import PullOver from './Pages/Dumbbell/PullOver/PullOver'
+import PullOverDetails from './Pages/Dumbbell/PullOver/PullOverDetails'
+import KickBack from './Pages/Dumbbell/KickBack/KickBack'
+import KickBackDetails from './Pages/Dumbbell/KickBack/KickBackDetails'
+import Snatch from './Pages/Kettebell/Snatch/Snatch'
+import SnatchDetails from './Pages/Kettebell/Snatch/SnatchDetails'
+import SeasawPress from './Pages/Kettebell/SeasawPress/SeasawPress'
+import SeasawPressDetails from './Pages/Kettebell/SeasawPress/SeasawPressDetails'
 
 
 
@@ -85,14 +109,38 @@ function App() {
       <Route path='/Cable' element={<CoreScreen/>}/>
       <Route path='/Cable/CableCurl' element={<CableCurl/>}/>
       <Route path='/Cable/CableCurl/video' element={<CableCurlDetails/>}/>
+      <Route path='/Cable/PullDown' element={<PullDown/>}/>
+      <Route path='/Cable/PullDown/video' element={<PullDownDetails/>}/>
+      <Route path='/Cable/BicepsCurl' element={<BicepsCurl/>}/>
+      <Route path='/Cable/BicepsCurl/video' element={<BicepsCurlDetails/>}/>
+      <Route path='/Cable/HammerCurl' element={<HammerCurl/>}/>
+      <Route path='/Cable/HammerCurl/video' element={<HammerCurlDetails/>}/>
+      <Route path='/Cable/PushDown' element={<PushDown/>}/>
+      <Route path='/Cable/PushDown/video' element={<PushDownDetails/>}/>
+      <Route path='/Cable/SeatedRow' element={<SeatedRow/>}/>
+      <Route path='/Cable/SeatedRow/video' element={<SeatedRowDetails/>}/>
 
       <Route path='/Dumbbell' element={<FunctionScreen/>}/>
       <Route path='/Dumbbell/Step-Up' element={<StepUp/>}/>
       <Route path='/Dumbbell/Step-Up/video' element={<StepUpDetails/>}/>
+      <Route path='/Dumbbell/LateralRaise' element={<LateralRaise/>}/>
+      <Route path='/Dumbbell/LateralRaise/video' element={<LateralRaiseDetails/>}/>
+      <Route path='/Dumbbell/Fly' element={<Fly/>}/>
+      <Route path='/Dumbbell/Fly/video' element={<FlyDetails/>}/>
+      <Route path='/Dumbbell/ArnoldPress' element={<ArnoldPress/>}/>
+      <Route path='/Dumbbell/ArnoldPress/video' element={<ArnoldPressDetails/>}/>
+      <Route path='/Dumbbell/PullOver' element={<PullOver/>}/>
+      <Route path='/Dumbbell/PullOver/video' element={<PullOverDetails/>}/>
+      <Route path='/Dumbbell/KickBack' element={<KickBack/>}/>
+      <Route path='/Dumbbell/KickBack/video' element={<KickBackDetails/>}/>
 
       <Route path='/Kettlebell' element={<IsolationScreen/>}/>
       <Route path='/Kettlebell/KettlebellSwing' element={<KettebellSwing/>}/>
       <Route path='/Kettlebell/KettlebellSwing/video' element={<KettebellSwingDetails/>}/>
+      <Route path='/Kettlebell/Snatch' element={<Snatch/>}/>
+      <Route path='/Kettlebell/Snatch/video' element={<SnatchDetails/>}/>
+      <Route path='/Kettlebell/SeasawPress' element={<SeasawPress/>}/>
+      <Route path='/Kettlebell/SeasawPress/video' element={<SeasawPressDetails/>}/>
 
       <Route path='/Machine' element={<CompoundScreen/>}/>
       <Route path='/Machine/SmithSquat' element={<SmithSquat/>}/>

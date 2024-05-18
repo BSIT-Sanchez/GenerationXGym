@@ -20,7 +20,7 @@ export const CategoryData = [
     image: '/images/lateralraise.jpg',
     price: '₱2800',
     teacher: 'andoy',
-    category: '/Dumbbel/LateralRaise',
+    category: '/Dumbbell/LateralRaise',
     subcategories: ['Shoulders']
   },
   {
