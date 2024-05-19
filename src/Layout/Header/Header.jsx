@@ -130,9 +130,20 @@ const Header = () => {
                         theme === 'light' ? <BiSolidMoon/> : <BiSolidSun/>
                       }               
                     </div>
+                    {User && (
                     <div onClick={profileHandler} className='bg-[#a7f3d0] p-1 text-sm w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
-                      <h1 className="cursor-pointer">LS</h1>
-                    </div>
+                    
+                      <div className="flex justify-center items-center">
+                        <NavLink to='/UserDashboard' className="">
+                        <img src="/images/profile.jpg" alt="profile" className="h-5 w-5 rounded-full object-cover cursor-pointer"/>
+                      
+                      </NavLink> 
+                      
+
+                      </div>
+                    </div>                
+                    )}
+                  
                     <div onClick={Handler} className='bg-[#a7f3d0]   p-1 w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
                       <FaTimes/>
                     </div>
@@ -145,13 +156,16 @@ const Header = () => {
                   <NavLink to='/' className={mainHover}>Home</NavLink>
                   <NavLink to='/Barbell'className={mainHover}>Classes</NavLink>
                   <NavLink to='/about'className={mainHover}>About</NavLink>
-                  <NavLink to='/login' className=" ">Sign Up</NavLink>                 
+                  {!User && (
+                    <NavLink to='/login' className={mainHover} onClick={handleLogin}>Sign Up</NavLink>
+                  )}                
                 </div>
-              { profile &&
+              { profile &&(
                 <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md">
                   <div>Dashboard</div>
+                  <div><button onClick={handleLogout}>logout</button></div>
                 </div>
-              } 
+              )} 
               </div>
             
             </div>
