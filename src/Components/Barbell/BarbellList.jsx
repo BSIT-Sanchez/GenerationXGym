@@ -9,7 +9,7 @@ export const CategoryData = [
     id: 1,
     name: 'Beach Press',
     image: '/images/beachPress.jpg',
-    price: '₱1500',
+    price: '₱1,500',
     teacher: 'Felipe Santiago',
     category: '/Barbell/BenchPress',
     subcategories: ['Chest']
@@ -18,7 +18,7 @@ export const CategoryData = [
     id: 2,
     name: 'Full Squat',
     image: '/images/fullsquat.jpg',
-    price: '₱2360',
+    price: '₱2,360',
     teacher: 'Alexa Dumo',
     category: '/Barbell/FullSquat',
     subcategories: ['Quadriceps']
@@ -27,7 +27,7 @@ export const CategoryData = [
     id: 3,
     name: 'Deadlift',
     image: '/images/deadlift.jpg',
-    price: '₱3100',
+    price: '₱3,100',
     teacher: 'Trevor Jace',
     category: '/Barbell/Deadlift',
     subcategories: ['Hips']
@@ -36,7 +36,7 @@ export const CategoryData = [
     id: 4,
     name: 'Reverse Curl',
     image: '/images/reversecurl.jpg',
-    price: '₱1200',
+    price: '₱1,200',
     teacher: 'Julius Dela Torre',
     category: '/Barbell/ReverseCurl',
     subcategories: ['Forearms']
@@ -45,7 +45,7 @@ export const CategoryData = [
     id: 5,
     name: 'Front Squat',
     image: '/images/frontsquat.jpg',
-    price: '₱300',
+    price: '₱3,000',
     teacher: 'Nathaniel Ursua',
     category: '/Barbell/FrontSquat',
     subcategories: ['Hips']
@@ -54,7 +54,7 @@ export const CategoryData = [
     id: 6,
     name: 'Incline Row',
     image: '/images/inclinerow.jpg',
-    price: '₱2500',
+    price: '₱2,500',
     teacher: 'Jobert Camo',
     category: '/Barbell/InclineRow',
     subcategories: ['Back']

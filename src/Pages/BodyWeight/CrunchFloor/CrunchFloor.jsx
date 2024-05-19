@@ -33,7 +33,7 @@ const CrunchFloor = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Crunch Floor</h1>
-                <p className="font-bold">₱2000</p>
+                <p className="font-bold">₱2,000</p>
               </div>           
               <p className="mx-2 mt-2">Crunch Fitness aims to create a welcoming and energetic environment for members of all fitness levels, offering a variety of options to help individuals achieve their fitness goals.</p>
             </div>
@@ -121,10 +121,10 @@ const CrunchFloor = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/crunchfloor.webp" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Crunch Floor</h1>
-                <p>₱2000</p>
+                <p>₱2,000</p>
 
               </div>
             

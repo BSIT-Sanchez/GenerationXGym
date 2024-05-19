@@ -10,7 +10,7 @@ export const CategoryData = [
     id: 1,
     name: 'Crunch Floor',
     image: '/images/crunchfloor.webp',
-    price: '₱2000',
+    price: '₱2,000',
     teacher: 'Jobert Camo',
     category: '/BWeight/CrunchFloor',
     subcategories: ['Waist']
@@ -19,7 +19,7 @@ export const CategoryData = [
     id: 2,
     name: 'Pull-Up',
     image: '/images/pullup.jpg',
-    price: '₱3000',
+    price: '₱3,000',
     teacher: 'Alexa Dumo',
     category: '/BWeight/PullUp',
     subcategories: ['Back']
@@ -28,7 +28,7 @@ export const CategoryData = [
     id: 3,
     name: 'Push-Up',
     image: '/images/pushup.webp',
-    price: '₱1000',
+    price: '₱1,000',
     teacher: 'Julius Dela Torre',
     category: '/BWeight/PushUp',
     subcategories: ['Chest']
@@ -37,7 +37,7 @@ export const CategoryData = [
     id: 4,
     name: 'Front Plank',
     image: '/images/frontplank.jpg',
-    price: '₱2500',
+    price: '₱2,500',
     teacher: 'Trevor Jace',
     category: '/BWeight/FrontPlank',
     subcategories: ['Waist']
@@ -46,7 +46,7 @@ export const CategoryData = [
     id: 5,
     name: 'Chest Dip',
     image: '/images/chestdip.jpg',
-    price: '₱2300',
+    price: '₱2,300',
     teacher: 'Julius Dela Torre',
     category: '/BWeight/ChestDip',
     subcategories: ['Chest']
@@ -55,7 +55,7 @@ export const CategoryData = [
     id: 6,
     name: 'Chin-Up',
     image: '/images/chinup.jpg',
-    price: '₱4000',
+    price: '₱4,000',
     teacher: 'Trevor Jace',
     category: '/BWeight/ChinUp',
     subcategories: ['Back']

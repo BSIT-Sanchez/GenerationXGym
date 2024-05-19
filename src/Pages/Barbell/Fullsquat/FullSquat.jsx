@@ -33,7 +33,7 @@ const FullSquat = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Full Squat</h1>
-                <p className="font-bold">₱1500</p>
+                <p className="font-bold">₱2,360</p>
               </div>           
               <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability</p>
             </div>
@@ -48,7 +48,7 @@ const FullSquat = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                    Alexa Dumo
                   </h1>
                 </div>                             
               </div>
@@ -74,7 +74,7 @@ const FullSquat = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Chest
+                    Quadriceps
                   </h2>
                 </div>                             
               </div>
@@ -121,10 +121,10 @@ const FullSquat = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/fullsquat.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
-                <h1>Beach Press</h1>
-                <p>₱500</p>
+                <h1>Full Squat</h1>
+                <p>₱2,360</p>
 
               </div>
             

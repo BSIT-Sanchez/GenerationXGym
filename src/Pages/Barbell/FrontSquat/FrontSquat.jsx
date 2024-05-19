@@ -33,7 +33,7 @@ const FrontSquat = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Front Squat</h1>
-                <p className="font-bold">₱1500</p>
+                <p className="font-bold">₱3,000</p>
               </div>           
               <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability</p>
             </div>
@@ -48,7 +48,7 @@ const FrontSquat = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                  Nathaniel Ursua
                   </h1>
                 </div>                             
               </div>
@@ -61,7 +61,7 @@ const FrontSquat = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    32 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -74,7 +74,7 @@ const FrontSquat = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Chest
+                    Hips
                   </h2>
                 </div>                             
               </div>
@@ -121,10 +121,10 @@ const FrontSquat = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/frontsquat.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
-                <h1>Beach Press</h1>
-                <p>₱500</p>
+                <h1>Front Squat</h1>
+                <p>₱3,000</p>
 
               </div>
             

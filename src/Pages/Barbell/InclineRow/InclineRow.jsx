@@ -33,9 +33,9 @@ const InclineRow = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Incline Row</h1>
-                <p className="font-bold">₱1500</p>
+                <p className="font-bold">₱2,500</p>
               </div>           
-              <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability</p>
+              <p className="mx-2 mt-2">Incline Row into your routine can significantly improve upper back strength and muscle definition.</p>
             </div>
           </div>
           <div>
@@ -48,7 +48,7 @@ const InclineRow = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                    Jobert Camo
                   </h1>
                 </div>                             
               </div>
@@ -61,7 +61,7 @@ const InclineRow = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    3hr 24 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -74,7 +74,7 @@ const InclineRow = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Chest
+                    Back
                   </h2>
                 </div>                             
               </div>
@@ -87,7 +87,7 @@ const InclineRow = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Intermediate
+                    Hard
                   </h2>
                 </div>                             
               </div>
@@ -121,10 +121,10 @@ const InclineRow = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/inclinerow.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Incline Row</h1>
-                <p>₱500</p>
+                <p>₱2,500</p>
 
               </div>
             

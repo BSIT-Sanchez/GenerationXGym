@@ -15,9 +15,9 @@ const ReverseCurlDetails = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Reverse Curl</h1>
-                <p className="font-bold">₱2360</p>
+                <p className="font-bold">₱1,200</p>
               </div>           
-              <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability.</p>
+              <p className="mx-2 mt-2">A reverse curl with a barbell is an effective exercise targeting the brachialis, a muscle located underneath the biceps, as well as the brachioradialis, which is part of the forearm.</p>
             </div>
           </div>
           <div>
@@ -30,7 +30,7 @@ const ReverseCurlDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                  Julius Dela Torre
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +43,7 @@ const ReverseCurlDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    1hr 32 Minutes
                   </h2>
                 </div>                             
               </div>

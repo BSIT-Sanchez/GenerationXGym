@@ -3,11 +3,44 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { useState, useEffect } from "react";
 import {BiSolidSun, BiSolidMoon} from 'react-icons/bi';
 import { FaTimes } from "react-icons/fa";
+import {useNavigate} from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
-  const [profile, setProfile ] = useState(false);
+  const [profile, setProfile ] = useState(true);
+  const [User, setUser] = useState(true);
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem('isLoggedIn') === 'true'
+  );
 
+  useEffect(() => {
+    // Fetch the authentication status from localStorage
+    const userIsLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    setUser(userIsLoggedIn);
+  }, [isLoggedIn]);
+
+  const handleLogin = () => {
+    localStorage.setItem('isLoggedIn', 'true'); 
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    localStorage.setItem('isLoggedIn', 'false');
+    setIsLoggedIn(navigate('/login'));
+    localStorage.clear(); 
+    setIsLoggedIn(false);
+    
+  };
+
+
+  
+
+
+
+
+  
   const Handler = () => {
     setToggle(!toggle)
   }
@@ -62,10 +95,28 @@ const Header = () => {
         </div>
         <div className="md:flex justify-center items-center gap-6 font-semibold hidden">
           <NavLink to='/' className={Hover}>Home</NavLink>
-          <NavLink to='/instructor' className={Hover}>Intructor</NavLink>
           <NavLink to='/Barbell' className={Hover}>Classes</NavLink>
           <NavLink to='/about' className={Hover}>About</NavLink>
-          <NavLink to='/login' className="bg-bgButton p-2 text-fontColor rounded-md">Sign Up</NavLink>
+          {User &&  (
+          <div className="flex justify-center items-center">
+            <NavLink to='/UserDashboard' className="">
+            <img src="/images/profile.jpg" alt="profile" className="h-5 w-5 rounded-full object-cover cursor-pointer"/>
+          
+          </NavLink> 
+          <button onClick={handleLogout}>logout</button>
+
+          </div>
+        
+        
+          )
+          }
+          
+          {!User && (
+            <NavLink to='/login' className="bg-bgButton p-1 text-fontColor rounded-md" onClick={handleLogin}>Sign Up</NavLink>
+          )
+
+          }
+          
         </div>
         <div className="sm:hidden">
           <HiOutlineMenuAlt3  onClick={Handler} className="w-10 h-9 bg-bgButton text-lg font-normal p-1 rounded-md cursor-pointer" />
@@ -92,7 +143,6 @@ const Header = () => {
                 </div>
                 <div className="flex flex-col relative w-full p-3 ">
                   <NavLink to='/' className={mainHover}>Home</NavLink>
-                  <NavLink to='/instructor' className={mainHover}>Intructor</NavLink>
                   <NavLink to='/Barbell'className={mainHover}>Classes</NavLink>
                   <NavLink to='/about'className={mainHover}>About</NavLink>
                   <NavLink to='/login' className=" ">Sign Up</NavLink>                 

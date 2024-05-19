@@ -15,7 +15,7 @@ const  CrunchDetails = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Crunch Floor</h1>
-                <p className="font-bold">₱2000</p>
+                <p className="font-bold">₱2,000</p>
               </div>           
               <p className="mx-2 mt-2">Crunch Fitness aims to create a welcoming and energetic environment for members of all fitness levels, offering a variety of options to help individuals achieve their fitness goals.</p>
             </div>

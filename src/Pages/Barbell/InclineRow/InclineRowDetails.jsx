@@ -15,9 +15,9 @@ const InclineRowDetails = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Incline Row</h1>
-                <p className="font-bold">₱2360</p>
+                <p className="font-bold">₱2,500</p>
               </div>           
-              <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability.</p>
+              <p className="mx-2 mt-2">Incline Row into your routine can significantly improve upper back strength and muscle definition.</p>
             </div>
           </div>
           <div>
@@ -30,7 +30,7 @@ const InclineRowDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                  Jobert Camo
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +43,7 @@ const InclineRowDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    3hr 24 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -56,7 +56,7 @@ const InclineRowDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Intermediate
+                    Hard
                   </h2>
                 </div>                             
               </div>

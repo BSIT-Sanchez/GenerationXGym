@@ -33,7 +33,7 @@ const BenchPress = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-8">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Bench Press</h1>
-                <p className="font-bold">₱1500</p>
+                <p className="font-bold">₱1,500</p>
               </div>           
               <p className="mx-2 mt-2">The bench press is more than just an exercise; its a cornerstone of strength training that offers numerous physical and psychological benefits.</p>
             </div>
@@ -121,10 +121,10 @@ const BenchPress = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/beachPress.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Beach Press</h1>
-                <p>₱500</p>
+                <p>₱1,500</p>
 
               </div>
             

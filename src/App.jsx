@@ -70,12 +70,29 @@ import Snatch from './Pages/Kettebell/Snatch/Snatch'
 import SnatchDetails from './Pages/Kettebell/Snatch/SnatchDetails'
 import SeasawPress from './Pages/Kettebell/SeasawPress/SeasawPress'
 import SeasawPressDetails from './Pages/Kettebell/SeasawPress/SeasawPressDetails'
+import Burpee from './Pages/Kettebell/Burpee/Burpee'
+import BurpeeDetails from './Pages/Kettebell/Burpee/BurpeeDetails'
+import DoubleJerk from './Pages/Kettebell/DoubleJerk/DoubleJerk'
+import DoubleJerkDetails from './Pages/Kettebell/DoubleJerk/DoubleJerkDetails'
+import BentPress from './Pages/Kettebell/BentPress/BentPress'
+import BentPressDetails from './Pages/Kettebell/BentPress/BentPressDetails'
+import CalfRaise from './Pages/Machine/CalfRaise/CalfRaise'
+import CalfRaiseDetails from './Pages/Machine/CalfRaise/CalfRaiseDetails'
+import RearLunge from './Pages/Machine/RearLunge/RearLunge'
+import RearLungeDetails from './Pages/Machine/RearLunge/RearLungeDetails'
+import DragCurl from './Pages/Machine/DragCurl/DragCurl'
+import DragCurlDetails from './Pages/Machine/DragCurl/DragCurlDetails'
+import HexPress from './Pages/Machine/HexPress/HexPress'
+import HexPressDetails from './Pages/Machine/HexPress/HexPressDetails'
+import Sumo from './Pages/Machine/Sumo/Sumo'
+import SumoDetails from './Pages/Machine/Sumo/SumoDetails'
 
 
 
 function App() {
   Aos.init();
   return (
+    
     <Routes>
       <Route path='/' element={<HomeScreen/>}/>
       <Route path='/Barbell' element={<UpperList/>}/>
@@ -141,10 +158,26 @@ function App() {
       <Route path='/Kettlebell/Snatch/video' element={<SnatchDetails/>}/>
       <Route path='/Kettlebell/SeasawPress' element={<SeasawPress/>}/>
       <Route path='/Kettlebell/SeasawPress/video' element={<SeasawPressDetails/>}/>
+      <Route path='/Kettlebell/Burpee' element={<Burpee/>}/>
+      <Route path='/Kettlebell/Burpee' element={<BurpeeDetails/>}/>
+      <Route path='/Kettlebell/DoubleJerk' element={<DoubleJerk/>}/>
+      <Route path='/Kettlebell/DoubleJerk' element={<DoubleJerkDetails/>}/>
+      <Route path='/Kettlebell/BentPress' element={<BentPress/>}/>
+      <Route path='/Kettlebell/BentPress/video' element={<BentPressDetails/>}/>
 
       <Route path='/Machine' element={<CompoundScreen/>}/>
       <Route path='/Machine/SmithSquat' element={<SmithSquat/>}/>
       <Route path='/Machine/SmithSquat/video' element={<SmithSquatDetails/>}/>
+      <Route path='/Machine/CalfRaise' element={<CalfRaise/>}/>
+      <Route path='/Machine/CalfRaise/video' element={<CalfRaiseDetails/>}/>
+      <Route path='/Machine/RearLunge' element={<RearLunge/>}/>
+      <Route path='/Machine/RearLunge/video' element={<RearLungeDetails/>}/>
+      <Route path='/Machine/DragCurl' element={<DragCurl/>}/>
+      <Route path='/Machine/DragCurl/video' element={<DragCurlDetails/>}/>
+      <Route path='/Machine/HexPress' element={<HexPress/>}/>
+      <Route path='/Machine/HexPress/video' element={<HexPressDetails/>}/>
+      <Route path='/Machine/SumoSquat' element={<Sumo/>}/>
+      <Route path='/Machine/SumoSquat/video' element={<SumoDetails/>}/>
 
       <Route path='/instructor' element={<InstructorScreen/>}/>
       <Route path='/about' element={<AboutScreen/>}/>

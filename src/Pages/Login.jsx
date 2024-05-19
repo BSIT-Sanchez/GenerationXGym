@@ -14,7 +14,7 @@ const Login = () => {
     if((username === 'admin@gmail.com' && password === 'admin123') || (username === 'user@gmail.com' && password === 'user123') || (username === 'ins@gmail.com' && password === 'ins123')){
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
-     
+    
       if(username === 'admin@gmail.com'){      
         navigate('/adminDashboard');
       }else if(username === 'ins@gmail.com'){
@@ -58,13 +58,13 @@ const Login = () => {
                 <div className="flex justify-center items-center gap-1 border p-2 border-bgButton rounded-sm cursor-pointer">                 
                     <FcGoogle className="h-5 w-5"/>
                     <h1 className="text-fontColor">Sign up with Google</h1>
-                               
+                              
                 </div>
                 
                 <div className="flex justify-center items-center gap-1 border p-2 border-[#3b5998] bg-[#3b5998] rounded-sm cursor-pointer">                 
                     <LiaFacebook className="text-fontColor h-5 w-5" />
                     <h1 className="text-fontColor">Sign up with Facebook</h1>
-                               
+                              
                 </div>
 
               </div>
@@ -105,10 +105,10 @@ const Login = () => {
                   </div>
                 
 
-                             
+                            
 
                 <button onClick={handleLogin} className="2xl:w-[95%] w-[95%] col-span-2  bg-bgButton p-2 rounded-md mt-4 hover:bg-bgFooter transition-all ease-in-out outline-none hover:text-fontColor font-medium">Login</button>
-               
+              
                     
                 
               </div>

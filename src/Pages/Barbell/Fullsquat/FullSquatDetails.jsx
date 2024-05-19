@@ -30,7 +30,7 @@ const  FullSquatDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                    Alexa Dumo
                   </h1>
                 </div>                             
               </div>

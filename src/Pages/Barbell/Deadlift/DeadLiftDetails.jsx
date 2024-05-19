@@ -15,9 +15,9 @@ const DeadLiftDetails = () => {
             <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Deadlift</h1>
-                <p className="font-bold">₱2360</p>
+                <p className="font-bold">₱3,100</p>
               </div>           
-              <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability.</p>
+              <p className="mx-2 mt-2">The deadlift is a movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor.</p>
             </div>
           </div>
           <div>
@@ -30,7 +30,7 @@ const DeadLiftDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Felipe Santiago
+                    Trevor Jace
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +43,7 @@ const DeadLiftDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 32 Minutes
+                    1hr 2Minutes
                   </h2>
                 </div>                             
               </div>
@@ -56,7 +56,7 @@ const DeadLiftDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Intermediate
+                    Hard
                   </h2>
                 </div>                             
               </div>
