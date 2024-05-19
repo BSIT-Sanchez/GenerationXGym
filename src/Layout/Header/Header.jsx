@@ -130,20 +130,11 @@ const Header = () => {
                         theme === 'light' ? <BiSolidMoon/> : <BiSolidSun/>
                       }               
                     </div>
-                    {User && (
                     <div onClick={profileHandler} className='bg-[#a7f3d0] p-1 text-sm w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
-                    
-                      <div className="flex justify-center items-center">
-                        <NavLink to='/UserDashboard' className="">
+                      <div className="cursor-pointer">
                         <img src="/images/profile.jpg" alt="profile" className="h-5 w-5 rounded-full object-cover cursor-pointer"/>
-                      
-                      </NavLink> 
-                      
-
                       </div>
-                    </div>                
-                    )}
-                  
+                    </div>
                     <div onClick={Handler} className='bg-[#a7f3d0]   p-1 w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
                       <FaTimes/>
                     </div>
@@ -163,7 +154,7 @@ const Header = () => {
               { profile &&(
                 <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md">
                   <div>Dashboard</div>
-                  <div><button onClick={handleLogout}>logout</button></div>
+                  <button onClick={handleLogout}>logout</button>
                 </div>
               )} 
               </div>

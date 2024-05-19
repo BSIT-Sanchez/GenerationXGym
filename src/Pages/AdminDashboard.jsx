@@ -2,14 +2,26 @@ import  { GrMenu }  from 'react-icons/gr'
 import { useState} from "react";
 import AdminSidebar from "../Components/AdminSideBar/AdminSidebar";
 import MobileSidebar from '../Components/AdminSideBar/MobileSidebar';
+import {useNavigate} from 'react-router-dom'
 
 
 const AdminDashboard = ({children}) => {
+  const navigate = useNavigate();
   const [isopen, setIsOpen] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem('isLoggedIn') === 'true'
+  );
 
   const toggleSidebar  = () => {
     setIsOpen(!isopen);
   }
+  const handleLogout = () => {
+    localStorage.setItem('isLoggedIn', 'false');
+    setIsLoggedIn(navigate('/login'));
+    localStorage.clear(); 
+    setIsLoggedIn(false);
+    
+  };
   return(
     <div className="h-screen bg-bgHeader grid grid-cols-1  md:grid-cols-12">
       <AdminSidebar isOpen ={isopen}/>
@@ -25,6 +37,7 @@ const AdminDashboard = ({children}) => {
         </div>
         <div> 
           <div>dfuigdugfugfugfuigdfuiui</div>
+          <button onClick={handleLogout}>logout</button>
         </div>
       
 
