@@ -98,7 +98,7 @@ const Header = () => {
           <NavLink to='/Barbell' className={Hover}>Classes</NavLink>
           <NavLink to='/about' className={Hover}>About</NavLink>
           {User &&  (
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center relative">
             <NavLink to='/UserDashboard' className="">
             <img src="/images/profile.jpg" alt="profile" className="h-5 w-5 rounded-full object-cover cursor-pointer"/>
           
@@ -121,7 +121,7 @@ const Header = () => {
         <div className="sm:hidden">
           <HiOutlineMenuAlt3  onClick={Handler} className="w-10 h-9 bg-bgButton text-lg font-normal p-1 rounded-md cursor-pointer" />
           { toggle &&
-            <div className="absolute bg-fontColor  dark:bg-bgFooter dark:text-fontColor top-0 left-0 w-full h-64 rounded-lg transition-all ease-in-out shadow-xl z-50">
+            <div className="absolute bg-fontColor  dark:bg-bgFooter dark:text-fontColor top-0 left-0 w-full h-[10rem] rounded-lg transition-all ease-in-out shadow-xl z-50 ">
               <div className="flex flex-col relative">
                 <div className="flex justify-end items-center">
                   <div className="flex justify-between items-center gap-3 mt-2 mr-2 ">
@@ -143,7 +143,7 @@ const Header = () => {
 
               
                 </div>
-                <div className="flex flex-col relative w-full p-3 ">
+                <div className="flex flex-col relative w-full p-3">
                   <NavLink to='/' className={mainHover}>Home</NavLink>
                   <NavLink to='/Barbell'className={mainHover}>Classes</NavLink>
                   <NavLink to='/about'className={mainHover}>About</NavLink>
@@ -152,7 +152,7 @@ const Header = () => {
                   )}                
                 </div>
               { profile &&(
-                <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md">
+                <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md h-[5rem] w-[50%] p-2">
                   <div>Dashboard</div>
                   <button onClick={handleLogout}>logout</button>
                 </div>

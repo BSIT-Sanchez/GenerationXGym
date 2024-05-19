@@ -55,17 +55,17 @@ const Login = () => {
               </div>
 
               <div className='flex 2xl:pl-20 2xl:pt-6 2xl:gap-2 gap-3 text-[12px] mt-4 sm:pl-3 xs:px-5 xs:text-[10px] lg:justify-center w-full'>
-                <div className="flex justify-center items-center gap-1 border p-2 border-bgButton rounded-sm cursor-pointer">                 
+                <Link to="/" className="flex justify-center items-center gap-1 border p-2 border-bgButton rounded-sm cursor-pointer">                 
                     <FcGoogle className="h-5 w-5"/>
                     <h1 className="text-fontColor">Sign up with Google</h1>
                               
-                </div>
+                </Link>
                 
-                <div className="flex justify-center items-center gap-1 border p-2 border-[#3b5998] bg-[#3b5998] rounded-sm cursor-pointer">                 
+                <Link to="/" className="flex justify-center items-center gap-1 border p-2 border-[#3b5998] bg-[#3b5998] rounded-sm cursor-pointer">                 
                     <LiaFacebook className="text-fontColor h-5 w-5" />
                     <h1 className="text-fontColor">Sign up with Facebook</h1>
                               
-                </div>
+                </Link>
 
               </div>
 
