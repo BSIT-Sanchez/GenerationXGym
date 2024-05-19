@@ -8,7 +8,7 @@ import {useNavigate} from 'react-router-dom'
 const Header = () => {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
-  const [profile, setProfile ] = useState(true);
+  const [profile, setProfile ] = useState(false);
   const [User, setUser] = useState(true);
   
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -130,11 +130,14 @@ const Header = () => {
                         theme === 'light' ? <BiSolidMoon/> : <BiSolidSun/>
                       }               
                     </div>
-                    <div onClick={profileHandler} className='bg-[#a7f3d0] p-1 text-sm w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
+                    {User && (
+                      <div onClick={profileHandler} className='bg-[#a7f3d0] p-1 text-sm w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
                       <div className="cursor-pointer">
                         <img src="/images/profile.jpg" alt="profile" className="h-5 w-5 rounded-full object-cover cursor-pointer"/>
                       </div>
                     </div>
+                    )}
+                    
                     <div onClick={Handler} className='bg-[#a7f3d0]   p-1 w-8 h-8 rounded-md flex justify-center items-center cursor-pointer'>
                       <FaTimes/>
                     </div>
@@ -148,10 +151,13 @@ const Header = () => {
                   <NavLink to='/Barbell'className={mainHover}>Classes</NavLink>
                   <NavLink to='/about'className={mainHover}>About</NavLink>
                   {!User && (
-                    <NavLink to='/login' className={mainHover} onClick={handleLogin}>Sign Up</NavLink>
-                  )}                
+            <NavLink to='/login' className="" onClick={handleLogin}>Sign Up</NavLink>
+          )
+
+          }               
                 </div>
-              { profile &&(
+                
+              { profile && (
                 <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md h-[5rem] w-[50%] p-2">
                   <div>Dashboard</div>
                   <button onClick={handleLogout}>logout</button>
