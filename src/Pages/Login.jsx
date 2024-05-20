@@ -16,7 +16,7 @@ const Login = () => {
       localStorage.setItem('password', password);
     
       if(username === 'admin@gmail.com'){      
-        navigate('/adminDashboard');
+        navigate('/AdminDashboard');
       }else if(username === 'ins@gmail.com'){
         navigate('/instructorDashboard');
       }
