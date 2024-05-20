@@ -97,6 +97,11 @@ const Header = () => {
           <NavLink to='/' className={Hover}>Home</NavLink>
           <NavLink to='/Barbell' className={Hover}>Classes</NavLink>
           <NavLink to='/about' className={Hover}>About</NavLink>
+          <div onClick={handleThemeSwitch} className='bg-[#fef08a] p-1 w-7 h-7 rounded-md flex justify-center items-center cursor-pointer'>
+            {
+                        theme === 'light' ? <BiSolidMoon/> : <BiSolidSun/>
+            }               
+          </div>
           {User &&  (
           <div className="flex justify-center items-center relative gap-1">
             <NavLink to='https://bsit-sanchez.github.io/UserDashboard/tracking.html' className="">

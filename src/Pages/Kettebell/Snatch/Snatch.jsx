@@ -26,16 +26,17 @@ const Snatch = () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <SnatchImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
-                <h1 className="font-bold">Snatch</h1>
-                <p className="font-bold">₱3500</p>
+                <h1 className="font-bold">Double Snatch</h1>
+                <p className="font-bold">₱3,500</p>
               </div>           
-              <p className="mx-2 mt-2">Step-Up is a versatile lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and calves. It also engages the core muscles for stability.</p>
+              <p className="mx-2 mt-2">The snatch is a highly technical lift that requires strength, power, speed, coordination, and flexibility.</p>
             </div>
           </div>
           <div>
@@ -74,7 +75,7 @@ const Snatch = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Hips
+                    Weightlifting
                   </h2>
                 </div>                             
               </div>
@@ -105,7 +106,7 @@ const Snatch = () => {
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -121,10 +122,10 @@ const Snatch = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/snatch.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
-                <h1>Snatch</h1>
-                <p>₱3500</p>
+                <h1>Double Snatch</h1>
+                <p>₱3,500</p>
 
               </div>
             
@@ -165,6 +166,7 @@ const Snatch = () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

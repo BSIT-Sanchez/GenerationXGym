@@ -9,8 +9,8 @@ export const CategoryData = [
     id: 1,
     name: 'Smith Squat',
     image: '/images/smithmachine.jpg',
-    price: '₱4500',
-    teacher: 'johm dou',
+    price: '₱4,500',
+    teacher: '',
     category: '/Machine/SmithSquat',
     subcategories: ['Hips']
   },
@@ -18,8 +18,8 @@ export const CategoryData = [
     id: 2,
     name: 'Calf Raise',
     image: '/images/calfraise.jpg',
-    price: '₱1500',
-    teacher: 'andoy',
+    price: '₱1,500',
+    teacher: '',
     category: '/Machine/CalfRaise',
     subcategories: ['Calves']
   },
@@ -27,8 +27,8 @@ export const CategoryData = [
     id: 3,
     name: 'Rear Lunge',
     image: '/images/rearlunge.jpg',
-    price: '₱4300',
-    teacher: 'Lando Sanchez',
+    price: '₱4,300',
+    teacher: '',
     category: '/Machine/RearLunge',
     subcategories: ['Quadriceps']
   },
@@ -36,8 +36,8 @@ export const CategoryData = [
     id: 4,
     name: 'Drag Curl',
     image: '/images/dragcurl.jpg',
-    price: '₱2500',
-    teacher: 'Lando Sanchez',
+    price: '₱2,500',
+    teacher: '',
     category: '/Machine/DragCurl',
     subcategories: ['Biceps']
   },
@@ -45,8 +45,8 @@ export const CategoryData = [
     id: 5,
     name: 'Hex Press',
     image: '/images/hexpress.jpg',
-    price: '₱3500',
-    teacher: 'Lando Sanchez',
+    price: '₱3,500',
+    teacher: '',
     category: '/Machine/HexPress',
     subcategories: ['Chest']
   },
@@ -54,8 +54,8 @@ export const CategoryData = [
     id: 6,
     name: 'Sumo Squat',
     image: '/images/sumo.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
+    price: '₱1,500',
+    teacher: '',
     category: '/Machine/SumoSquat',
     subcategories: ['Hips']
   },
@@ -78,7 +78,7 @@ const CompoundList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -88,7 +88,7 @@ const CompoundList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

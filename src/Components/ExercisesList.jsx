@@ -8,8 +8,8 @@ export const InstructorList = [
     id: 1,
     name: 'BenchPress',
     image: '/images/beachPress.jpg',
-    price: '₱1500',
-    teacher: 'Felipe Santiago',
+    price: '₱1,500',
+    teacher: '',
     category: '/Barbell',
     subcategories: ['Barbell Exercise']
   },
@@ -17,8 +17,8 @@ export const InstructorList = [
     id: 2,
     name: 'CrunchFloor',
     image: '/images/crunchfloor.webp',
-    price: '₱2000',
-    teacher: 'Jobert Camo',
+    price: '₱2,000',
+    teacher: '',
     category: '/BWeight',
     subcategories: ['BodyWeight Exercise']
   },
@@ -26,8 +26,8 @@ export const InstructorList = [
     id: 3,
     name: 'CableCurl',
     image: '/images/cablecurl.jpg',
-    price: '₱2990',
-    teacher: 'Nathaniel Ursua',
+    price: '₱2,990',
+    teacher: '',
     category: '/Cable',
     subcategories: ['Cable Exercise']
   },
@@ -35,8 +35,8 @@ export const InstructorList = [
     id: 4,
     name: 'Step-Up',
     image: '/images/stepup.jpg',
-    price: '₱3500',
-    teacher: 'Julius Dela Torre',
+    price: '₱3,500',
+    teacher: '',
     category: '/Dumbbell',
     subcategories: ['Dumbbell Exercise']
   },
@@ -44,8 +44,8 @@ export const InstructorList = [
     id: 5,
     name: 'KettlebellSwing',
     image: '/images/kettlebellswing.jpg',
-    price: '₱2100',
-    teacher: 'Alexa Dumo',
+    price: '₱2,100',
+    teacher: '',
     category: '/Kettlebell',
     subcategories: ['Kettebell Exercise']
   },
@@ -53,8 +53,8 @@ export const InstructorList = [
     id: 6,
     name: 'SmithSquat ',
     image: '/images/smithmachine.jpg',
-    price: '₱4500',
-    teacher: 'Trevor Jace',
+    price: '₱4,500',
+    teacher: '',
     category: '/Machine',
     subcategories: ['Machine Exercise']
   },
@@ -63,9 +63,9 @@ export const InstructorList = [
 const ExercisesList = () => {
   return(
     <div>
-      <div className="categoryTitle mt-10">
+      <div className="categoryTitle mt-10 dark:bg-bgFooter">
         <BsBookmarkStarFill className="text-bgButton sm:w-6 sm:h-6 w-4 h-4"/>
-        <h2 className=" font-bold text-lg sm:text-xl">Popular Exercises</h2>
+        <h2 className=" font-bold text-lg sm:text-xl dark:text-fontColor">Popular Exercises</h2>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
         {
@@ -76,7 +76,7 @@ const ExercisesList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -86,7 +86,7 @@ const ExercisesList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

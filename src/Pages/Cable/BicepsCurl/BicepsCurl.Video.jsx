@@ -11,7 +11,7 @@ function BicepsCurlVideo() {
         autoPlay
         controls
         ref={videoRef}
-        src="/videos/cablecurl.mp4"
+        src="/videos/bicepscurl.mp4"
         className='w-full h-[20rem] 1xs:-mt-12 md:mt-0 rounded-sm'
       />
     

@@ -8,16 +8,17 @@ import AutoScroll from "./AutoScroll";
 const SeatedRowDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <SeatedRowVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
-                <h1 className="font-bold">Seated Row </h1>
-                <p className="font-bold">₱2990</p>
+                <h1 className="font-bold">Seated Row</h1>
+                <p className="font-bold">₱1,700</p>
               </div>           
-              <p className="mx-2 mt-2">Cable Curl is a valuable addition to any strength training routine, particularly for those aiming to develop stronger and more defined biceps.</p>
+              <p className="mx-2 mt-2">The seated row exercise is effective for building strength and muscle mass in the back, improving posture, and enhancing overall upper body strength.</p>
             </div>
           </div>
           <div>
@@ -30,7 +31,7 @@ const SeatedRowDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Nathaniel Ursua 
+                  Julius Dela Torre
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +44,7 @@ const SeatedRowDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    50 Minutes
+                  2hr 33 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -76,6 +77,7 @@ const SeatedRowDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

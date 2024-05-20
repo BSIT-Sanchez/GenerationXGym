@@ -11,7 +11,7 @@ function ChestDipVideo() {
         autoPlay
         controls
         ref={videoRef}
-        src="/videos/crunchfloor.mp4"
+        src="/videos/chestdip.mp4"
         className='w-full h-[20rem] 1xs:-mt-12 md:mt-0 rounded-sm'
       />
     

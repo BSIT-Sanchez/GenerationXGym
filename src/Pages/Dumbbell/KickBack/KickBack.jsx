@@ -26,16 +26,17 @@ const KickBack = () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <KickBackImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Kick Back</h1>
-                <p className="font-bold">₱3500</p>
+                <p className="font-bold">₱1,500</p>
               </div>           
-              <p className="mx-2 mt-2">Step-Up is a versatile lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and calves. It also engages the core muscles for stability.</p>
+              <p className="mx-2 mt-2">A kickback exercise, commonly referred to as a tricep kickback, is a strength training exercise that targets the triceps muscles, which are located at the back of the upper arm.</p>
             </div>
           </div>
           <div>
@@ -48,7 +49,7 @@ const KickBack = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Julius Dela Torre
+                    Jobert Camo
                   </h1>
                 </div>                             
               </div>
@@ -61,7 +62,7 @@ const KickBack = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 50 Minutes
+                    23 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -74,7 +75,7 @@ const KickBack = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Hips
+                    Triceps
                   </h2>
                 </div>                             
               </div>
@@ -87,7 +88,7 @@ const KickBack = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Intermediate
+                    Hard
                   </h2>
                 </div>                             
               </div>
@@ -100,12 +101,12 @@ const KickBack = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    3k Students
+                    2k Students
                   </h2>
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -121,10 +122,10 @@ const KickBack = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/kickback.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Kick Back</h1>
-                <p>₱3500</p>
+                <p>₱1,500</p>
 
               </div>
             
@@ -165,6 +166,7 @@ const KickBack = () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

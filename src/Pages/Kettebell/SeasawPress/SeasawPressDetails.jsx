@@ -8,16 +8,17 @@ import SeasawPressVideo from "./SeasawPressVideo";
 const SeasawPressDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <SeasawPressVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
-                <h1 className="font-bold">Seasaw Press</h1>
-                <p className="font-bold">₱3500</p>
+                <h1 className="font-bold">Russian Twist</h1>
+                <p className="font-bold">₱1,500</p>
               </div>           
-              <p className="mx-2 mt-2">Step-Up is a versatile lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and calves. It also engages the core muscles for stability.</p>
+              <p className="mx-2 mt-2">The Russian twist is an effective exercise for strengthening the core muscles, improving rotational stability, and enhancing overall core strength.</p>
             </div>
           </div>
           <div>
@@ -30,7 +31,7 @@ const SeasawPressDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Julius Dela Torre
+                  Jobert Camo
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +44,7 @@ const SeasawPressDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 50 Minutes
+                  1hr 50 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -76,6 +77,7 @@ const SeasawPressDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

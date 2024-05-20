@@ -26,16 +26,17 @@ const FrontPlank = () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <FrontPlankImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Front Plank</h1>
-                <p className="font-bold">₱2000</p>
+                <p className="font-bold">₱2,500</p>
               </div>           
-              <p className="mx-2 mt-2">Crunch Fitness aims to create a welcoming and energetic environment for members of all fitness levels, offering a variety of options to help individuals achieve their fitness goals.</p>
+              <p className="mx-2 mt-2">The front plank, often simply referred to as the plank, is a core exercise that strengthens various muscle groups throughout the body.</p>
             </div>
           </div>
           <div>
@@ -48,7 +49,7 @@ const FrontPlank = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Jobert Camo
+                    Trevor Jace
                   </h1>
                 </div>                             
               </div>
@@ -105,7 +106,7 @@ const FrontPlank = () => {
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -121,10 +122,10 @@ const FrontPlank = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/frontplank.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Front Plank</h1>
-                <p>₱2000</p>
+                <p>₱2,500</p>
 
               </div>
             
@@ -165,6 +166,7 @@ const FrontPlank = () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

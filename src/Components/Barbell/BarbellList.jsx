@@ -10,7 +10,7 @@ export const CategoryData = [
     name: 'Beach Press',
     image: '/images/beachPress.jpg',
     price: '₱1,500',
-    teacher: 'Felipe Santiago',
+    teacher: '',
     category: '/Barbell/BenchPress',
     subcategories: ['Chest']
   },
@@ -19,7 +19,7 @@ export const CategoryData = [
     name: 'Full Squat',
     image: '/images/fullsquat.jpg',
     price: '₱2,360',
-    teacher: 'Alexa Dumo',
+    teacher: '',
     category: '/Barbell/FullSquat',
     subcategories: ['Quadriceps']
   },
@@ -28,7 +28,7 @@ export const CategoryData = [
     name: 'Deadlift',
     image: '/images/deadlift.jpg',
     price: '₱3,100',
-    teacher: 'Trevor Jace',
+    teacher: '',
     category: '/Barbell/Deadlift',
     subcategories: ['Hips']
   },
@@ -37,7 +37,7 @@ export const CategoryData = [
     name: 'Reverse Curl',
     image: '/images/reversecurl.jpg',
     price: '₱1,200',
-    teacher: 'Julius Dela Torre',
+    teacher: '',
     category: '/Barbell/ReverseCurl',
     subcategories: ['Forearms']
   },
@@ -46,7 +46,7 @@ export const CategoryData = [
     name: 'Front Squat',
     image: '/images/frontsquat.jpg',
     price: '₱3,000',
-    teacher: 'Nathaniel Ursua',
+    teacher: '',
     category: '/Barbell/FrontSquat',
     subcategories: ['Hips']
   },
@@ -55,7 +55,7 @@ export const CategoryData = [
     name: 'Incline Row',
     image: '/images/inclinerow.jpg',
     price: '₱2,500',
-    teacher: 'Jobert Camo',
+    teacher: '',
     category: '/Barbell/InclineRow',
     subcategories: ['Back']
   },
@@ -78,7 +78,7 @@ const SideBarList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -88,7 +88,7 @@ const SideBarList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

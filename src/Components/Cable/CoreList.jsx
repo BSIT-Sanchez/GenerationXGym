@@ -8,8 +8,8 @@ export const CategoryData = [
     id: 1,
     name: 'Cable Curl',
     image: '/images/cablecurl.jpg',
-    price: '₱2990',
-    teacher: 'Nathaniel Ursa',
+    price: '₱2,990',
+    teacher: '',
     category: '/Cable/CableCurl',
     subcategories: ['Biceps']
   },
@@ -17,8 +17,8 @@ export const CategoryData = [
     id: 2,
     name: 'Pull Down',
     image: '/images/pulldown.jpg',
-    price: '₱2100',
-    teacher: 'andoy',
+    price: '₱2,100',
+    teacher: '',
     category: '/Cable/PullDown',
     subcategories: ['Back']
   },
@@ -26,8 +26,8 @@ export const CategoryData = [
     id: 3,
     name: 'Biceps Curl',
     image: '/images/bicepscurl.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
+    price: '₱1,500',
+    teacher: '',
     category: '/Cable/BicepsCurl',
     subcategories: ['Biceps']
   },
@@ -35,8 +35,8 @@ export const CategoryData = [
     id: 4,
     name: 'Hammer Curl',
     image: '/images/hammercurl.jpg',
-    price: '₱4500',
-    teacher: 'Lando Sanchez',
+    price: '₱4,500',
+    teacher: '',
     category: '/Cable/HammerCurl',
     subcategories: ['Forearms']
   },
@@ -44,8 +44,8 @@ export const CategoryData = [
     id: 5,
     name: 'Push Down',
     image: '/images/pushdown.jpg',
-    price: '₱2600',
-    teacher: 'Lando Sanchez',
+    price: '₱2,600',
+    teacher: '',
     category: '/Cable/PushDown',
     subcategories: ['Back']
   },
@@ -53,8 +53,8 @@ export const CategoryData = [
     id: 6,
     name: 'Seated Row',
     image: '/images/seatedrow.jpg',
-    price: '₱1700',
-    teacher: 'Lando Sanchez',
+    price: '₱1,700',
+    teacher: '',
     category: '/Cable/SeatedRow',
     subcategories: ['Back']
   },
@@ -77,7 +77,7 @@ const CoreList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -87,7 +87,7 @@ const CoreList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

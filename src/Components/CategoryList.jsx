@@ -49,8 +49,8 @@ export const categories = [
 
 const CategoryList = () => {
   return( 
-    <div>
-      <div className="categoryTitle mt-5">
+    <div className="dark:bg-bgFooter dark:text-bgFooter">
+      <div className="categoryTitle mt-5 dark:text-fontColor">
         <BsCollectionFill className="text-bgButton sm:w-6 sm:h-6 w-4 h-4"/>
         <h2 className=" font-bold text-lg sm:text-xl">Categories</h2>
 

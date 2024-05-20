@@ -8,11 +8,12 @@ import AutoScroll from "./AutoScroll";
 const InclineRowDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <InclineRowVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Incline Row</h1>
                 <p className="font-bold">₱2,500</p>
@@ -76,6 +77,7 @@ const InclineRowDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

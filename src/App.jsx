@@ -120,9 +120,9 @@ function App() {
       <Route path='/BWeight/PushUp' element={<PushUp/>}/>
       <Route path='/BWeight/PushUp/video' element={<PushUpDetails/>}/>
       <Route path='/BWeight/FrontPlank' element={<FrontPlank/>}/>
-      <Route path='/BWeight/FrontPlank' element={<FrontPlankDetails/>}/>
+      <Route path='/BWeight/FrontPlank/video' element={<FrontPlankDetails/>}/>
       <Route path='/BWeight/ChestDip' element={<ChestDip/>}/>
-      <Route path='/BWeight/ChestDip' element={<ChestDipDetails/>}/>
+      <Route path='/BWeight/ChestDip/video' element={<ChestDipDetails/>}/>
       <Route path='/BWeight/ChinUp' element={<ChinUp/>}/>
       <Route path='/BWeight/ChinUp/video' element={<ChinUpDetails/>}/>
 
@@ -162,9 +162,9 @@ function App() {
       <Route path='/Kettlebell/SeasawPress' element={<SeasawPress/>}/>
       <Route path='/Kettlebell/SeasawPress/video' element={<SeasawPressDetails/>}/>
       <Route path='/Kettlebell/Burpee' element={<Burpee/>}/>
-      <Route path='/Kettlebell/Burpee' element={<BurpeeDetails/>}/>
+      <Route path='/Kettlebell/Burpee/video' element={<BurpeeDetails/>}/>
       <Route path='/Kettlebell/DoubleJerk' element={<DoubleJerk/>}/>
-      <Route path='/Kettlebell/DoubleJerk' element={<DoubleJerkDetails/>}/>
+      <Route path='/Kettlebell/DoubleJerk/video' element={<DoubleJerkDetails/>}/>
       <Route path='/Kettlebell/BentPress' element={<BentPress/>}/>
       <Route path='/Kettlebell/BentPress/video' element={<BentPressDetails/>}/>
 

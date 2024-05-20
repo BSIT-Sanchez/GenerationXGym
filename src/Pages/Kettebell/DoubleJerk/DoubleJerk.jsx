@@ -26,16 +26,17 @@ const DoubleJerk = () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <DoubleJerkImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Double Jerk</h1>
-                <p className="font-bold">₱3500</p>
+                <p className="font-bold">₱2,400</p>
               </div>           
-              <p className="mx-2 mt-2">Step-Up is a versatile lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and calves. It also engages the core muscles for stability.</p>
+              <p className="mx-2 mt-2">The double jerk is a complex exercise that requires proper technique and practice. If you are new to this movement, consider working with a qualified coach or trainer to learn the correct form and gradually progress to heavier weights.</p>
             </div>
           </div>
           <div>
@@ -105,7 +106,7 @@ const DoubleJerk = () => {
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -121,10 +122,10 @@ const DoubleJerk = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/doublejerk.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Double Jerk</h1>
-                <p>₱3500</p>
+                <p>₱2,400</p>
 
               </div>
             
@@ -155,7 +156,7 @@ const DoubleJerk = () => {
 
             <div className="flex justify-center items-center gap-8 w-full mt-10">
               <button className="p-1 bg-[#dc2626] rounded-sm font-normal text-[#fff]" onClick={handler}>Cancel</button>
-              <Link to="/Kettlebell/DoubleJerkvideo" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
+              <Link to="/Kettlebell/DoubleJerk/video" className="p-1 bg-[#06b6d4] rounded-sm font-normal text-[#fff]">Proceed</Link> 
 
             </div>
 
@@ -165,6 +166,7 @@ const DoubleJerk = () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

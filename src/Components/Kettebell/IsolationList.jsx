@@ -9,44 +9,44 @@ export const CategoryData = [
     id: 1,
     name: 'KettlebellSwing',
     image: '/images/kettlebellswing.jpg',
-    price: '₱2100',
-    teacher: 'johm dou',
+    price: '₱2,100',
+    teacher: '',
     category: '/Kettlebell/KettlebellSwing',
     subcategories: ['Harmstrings']
   },
   {
     id: 2,
-    name: 'Snatch',
+    name: 'Double Snatch',
     image: '/images/snatch.jpg',
-    price: '₱2300',
-    teacher: 'andoy',
+    price: '₱3,500',
+    teacher: '',
     category: '/Kettlebell/Snatch',
     subcategories: ['Weightlifting']
   },
   {
     id: 3,
-    name: 'Seasaw Press',
+    name: 'Russian Twist',
     image: '/images/seasawpress.jpg',
-    price: '₱3100',
-    teacher: 'Lando Sanchez',
+    price: '₱1,500',
+    teacher: '',
     category: '/Kettlebell/SeasawPress',
-    subcategories: ['Shoulders']
+    subcategories: ['Waist']
   },
   {
     id: 4,
-    name: 'Burpee',
+    name: 'Goblet Squat',
     image: '/images/burpee.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
+    price: '₱2,700',
+    teacher: '',
     category: '/Kettlebell/Burpee',
-    subcategories: ['Plyometrics']
+    subcategories: ['Quadriceps']
   },
   {
     id: 5,
     name: 'Double Jerk',
     image: '/images/doublejerk.jpg',
-    price: '₱2400',
-    teacher: 'Lando Sanchez',
+    price: '₱2,400',
+    teacher: '',
     category: '/Kettlebell/DoubleJerk',
     subcategories: ['Shoulders']
   },
@@ -54,8 +54,8 @@ export const CategoryData = [
     id: 6,
     name: 'Bent Press',
     image: '/images/bentpress.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
+    price: '₱1,500',
+    teacher: '',
     category: '/Kettlebell/BentPress',
     subcategories: ['Waist']
   },
@@ -78,7 +78,7 @@ const IsolationList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -88,7 +88,7 @@ const IsolationList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

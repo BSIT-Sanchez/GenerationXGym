@@ -28,20 +28,20 @@ function Footer() {
     title: 'Top Categories',
     links: [
       {
-        name: 'Upper',
-        link:'/Upper'
+        name: 'Barbell',
+        link:'/Barbell'
       },
       {
-        name: 'Core',
-        link:'/Core'
+        name: 'Cable',
+        link:'/Cable'
       },
       {
-        name: 'Lower',
-        link:'/Lower'
+        name: 'Dumbbell',
+        link:'/Dumbbell'
       },
       {
-        name: 'Functional ',
-        link:'/Function'
+        name: 'Machine',
+        link:'/Machine'
       },
     ]
   },
@@ -50,7 +50,7 @@ function Footer() {
     links: [
       {
         name: 'Dashboard',
-        link:'/dashboard'
+        link:'https://bsit-sanchez.github.io/UserDashboard/tracking.html'
       },
       {
         name: 'My Favorite',
@@ -68,7 +68,7 @@ function Footer() {
   },
 ]
   return (
-    <div className='bg-bgFooter dark:bg-fontColor dark:text-bgFooter mt-10 text-fontColor shadow-2xl'>
+    <div className='bg-bgFooter dark:bg-fontColor dark:text-bgFooter text-fontColor shadow-2xl'>
       <div className='container mx-auto gap-6 grid grid-cols-2 pt-10 px-6 paddingSize md:grid-cols-3 lg:grid-cols-4'>
         {
           Links.map((link, index) => (

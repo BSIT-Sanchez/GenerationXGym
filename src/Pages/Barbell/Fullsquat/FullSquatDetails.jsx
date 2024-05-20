@@ -8,14 +8,15 @@ import AutoScroll from "./AutoScroll";
 const  FullSquatDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <FullSquatVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Full Squat</h1>
-                <p className="font-bold">₱2360</p>
+                <p className="font-bold">₱2,360</p>
               </div>           
               <p className="mx-2 mt-2">A full squat, also known as a deep squat, is a fundamental lower-body exercise often performed with a barbell. This exercise targets the quadriceps, hamstrings, glutes, and calves, while also engaging the core for stability.</p>
             </div>
@@ -76,6 +77,7 @@ const  FullSquatDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

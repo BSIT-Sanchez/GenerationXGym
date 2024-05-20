@@ -8,16 +8,17 @@ import DoubleJerkVideo from "./DoubleJerkVideo";
 const DoubleJerkDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <DoubleJerkVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Double Jerk</h1>
-                <p className="font-bold">₱3500</p>
+                <p className="font-bold">₱2,4500</p>
               </div>           
-              <p className="mx-2 mt-2">Step-Up is a versatile lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and calves. It also engages the core muscles for stability.</p>
+              <p className="mx-2 mt-2">The double jerk is a complex exercise that requires proper technique and practice. If you are new to this movement, consider working with a qualified coach or trainer to learn the correct form and gradually progress to heavier weights.</p>
             </div>
           </div>
           <div>
@@ -56,7 +57,7 @@ const DoubleJerkDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Easy
+                  Intermediate
                   </h2>
                 </div>                             
               </div>
@@ -76,6 +77,7 @@ const DoubleJerkDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

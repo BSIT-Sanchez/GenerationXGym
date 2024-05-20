@@ -26,16 +26,17 @@ const ChestDip = () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <ChestDipImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Chest Dip</h1>
-                <p className="font-bold">₱2000</p>
+                <p className="font-bold">₱2,300</p>
               </div>           
-              <p className="mx-2 mt-2">Crunch Fitness aims to create a welcoming and energetic environment for members of all fitness levels, offering a variety of options to help individuals achieve their fitness goals.</p>
+              <p className="mx-2 mt-2">A chest dip is a compound exercise that primarily targets the muscles of the chest (pectorals), triceps, and shoulders.</p>
             </div>
           </div>
           <div>
@@ -48,7 +49,7 @@ const ChestDip = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Jobert Camo
+                    Julius Dela Torre
                   </h1>
                 </div>                             
               </div>
@@ -61,7 +62,7 @@ const ChestDip = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    1hr 20 Minutes
+                    1hr 05 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -74,7 +75,7 @@ const ChestDip = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Waist
+                    Chest
                   </h2>
                 </div>                             
               </div>
@@ -100,12 +101,12 @@ const ChestDip = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    1k Students
+                    3k Students
                   </h2>
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -121,10 +122,10 @@ const ChestDip = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/chestdip.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Chest Dip</h1>
-                <p>₱2000</p>
+                <p>₱2,300</p>
 
               </div>
             
@@ -165,6 +166,7 @@ const ChestDip = () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

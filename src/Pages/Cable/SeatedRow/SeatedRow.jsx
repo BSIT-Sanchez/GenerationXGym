@@ -26,16 +26,17 @@ const SeatedRow = () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <SeatedRowImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Seated Row</h1>
-                <p className="font-bold">₱2990</p>
+                <p className="font-bold">₱1,700</p>
               </div>           
-              <p className="mx-2 mt-2">Cable Curl is a valuable addition to any strength training or bodybuilding routine, particularly for those aiming to develop stronger and more defined biceps.</p>
+              <p className="mx-2 mt-2">The seated row exercise is effective for building strength and muscle mass in the back, improving posture, and enhancing overall upper body strength.</p>
             </div>
           </div>
           <div>
@@ -48,7 +49,7 @@ const SeatedRow = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Nathaniel Ursua
+                    Julius Dela Torre
                   </h1>
                 </div>                             
               </div>
@@ -61,7 +62,7 @@ const SeatedRow = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    50 Minutes
+                    2hr 33 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -74,7 +75,7 @@ const SeatedRow = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Biceps
+                    Back
                   </h2>
                 </div>                             
               </div>
@@ -100,12 +101,12 @@ const SeatedRow = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    3k Students
+                    1k Students
                   </h2>
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -121,10 +122,10 @@ const SeatedRow = () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/seatedrow.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Seated Row</h1>
-                <p>₱2990</p>
+                <p>₱1,700</p>
 
               </div>
             
@@ -165,6 +166,7 @@ const SeatedRow = () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

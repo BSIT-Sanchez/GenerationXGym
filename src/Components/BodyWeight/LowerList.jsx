@@ -11,7 +11,7 @@ export const CategoryData = [
     name: 'Crunch Floor',
     image: '/images/crunchfloor.webp',
     price: '₱2,000',
-    teacher: 'Jobert Camo',
+    teacher: '',
     category: '/BWeight/CrunchFloor',
     subcategories: ['Waist']
   },
@@ -20,7 +20,7 @@ export const CategoryData = [
     name: 'Pull-Up',
     image: '/images/pullup.jpg',
     price: '₱3,000',
-    teacher: 'Alexa Dumo',
+    teacher: '',
     category: '/BWeight/PullUp',
     subcategories: ['Back']
   },
@@ -29,7 +29,7 @@ export const CategoryData = [
     name: 'Push-Up',
     image: '/images/pushup.webp',
     price: '₱1,000',
-    teacher: 'Julius Dela Torre',
+    teacher: '',
     category: '/BWeight/PushUp',
     subcategories: ['Chest']
   },
@@ -38,7 +38,7 @@ export const CategoryData = [
     name: 'Front Plank',
     image: '/images/frontplank.jpg',
     price: '₱2,500',
-    teacher: 'Trevor Jace',
+    teacher: '',
     category: '/BWeight/FrontPlank',
     subcategories: ['Waist']
   },
@@ -47,7 +47,7 @@ export const CategoryData = [
     name: 'Chest Dip',
     image: '/images/chestdip.jpg',
     price: '₱2,300',
-    teacher: 'Julius Dela Torre',
+    teacher: '',
     category: '/BWeight/ChestDip',
     subcategories: ['Chest']
   },
@@ -56,7 +56,7 @@ export const CategoryData = [
     name: 'Chin-Up',
     image: '/images/chinup.jpg',
     price: '₱4,000',
-    teacher: 'Trevor Jace',
+    teacher: '',
     category: '/BWeight/ChinUp',
     subcategories: ['Back']
   },
@@ -79,7 +79,7 @@ const LowerList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -89,7 +89,7 @@ const LowerList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

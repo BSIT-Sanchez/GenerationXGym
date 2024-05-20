@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 
 const CategorySideBar = () => {
   return(
-    <div className="grid grid-cols-3 mb-3 md:grid-cols-1 gap-2 md:mb-0">
+    <div className="grid grid-cols-3 mb-3 md:grid-cols-1 gap-2 md:mb-0 ">
       <h2 className="font-bold mb-3 text-lg text-bgButton hidden md:block">Categories</h2>
       {
         categories.map((category, index) => (

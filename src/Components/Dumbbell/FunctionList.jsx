@@ -9,8 +9,8 @@ export const CategoryData = [
     id: 1,
     name: 'Step-Up',
     image: '/images/stepup.jpg',
-    price: '₱3500',
-    teacher: 'johm dou',
+    price: '₱3,500',
+    teacher: '',
     category: '/Dumbbell/Step-Up',
     subcategories: ['Hips']
   },
@@ -18,8 +18,8 @@ export const CategoryData = [
     id: 2,
     name: 'Lateral Raise',
     image: '/images/lateralraise.jpg',
-    price: '₱2800',
-    teacher: 'andoy',
+    price: '₱2,800',
+    teacher: '',
     category: '/Dumbbell/LateralRaise',
     subcategories: ['Shoulders']
   },
@@ -27,8 +27,8 @@ export const CategoryData = [
     id: 3,
     name: 'Fly',
     image: '/images/fly.jpg',
-    price: '₱1500',
-    teacher: 'Lando Sanchez',
+    price: '₱1,500',
+    teacher: '',
     category: '/Dumbbell/Fly',
     subcategories: ['Chest']
   },
@@ -36,8 +36,8 @@ export const CategoryData = [
     id: 4,
     name: 'Arnold Press',
     image: '/images/arnoldpress.jpg',
-    price: '₱3200',
-    teacher: 'Lando Sanchez',
+    price: '₱3,200',
+    teacher: '',
     category: '/Dumbbell/ArnoldPress',
     subcategories: ['Shoulders']
   },
@@ -45,8 +45,8 @@ export const CategoryData = [
     id: 5,
     name: 'Pull Over',
     image: '/images/pullover.jpg',
-    price: '₱2400',
-    teacher: 'Lando Sanchez',
+    price: '₱2,400',
+    teacher: '',
     category: '/Dumbbell/PullOver',
     subcategories: ['Chest']
   },
@@ -55,7 +55,7 @@ export const CategoryData = [
     name: 'Kick Back',
     image: '/images/kickback.jpg',
     price: '₱1500',
-    teacher: 'Lando Sanchez',
+    teacher: '',
     category: '/Dumbbell/KickBack',
     subcategories: ['Triceps']
   },
@@ -78,7 +78,7 @@ const FunctionList = () => {
 
                 <div className="flex justify-between mx-1 items-start pt-1">
                   <div>
-                    <h1 className="font-bold text-xs md:text-md lg:md">{category.name}</h1>
+                    <h1 className="font-bold text-xs md:text-md lg:md  dark:text-bgFooter">{category.name}</h1>
                     <h1 className="text-xs">{category.teacher}</h1>
                     {category.subcategories.map(subcategory => (
                       <h6 key={subcategory} className="absolute top-2 left-2 text-xs text-fontColor bg-[#34d399] p-1 rounded-sm md:text-md lg:text-md font-medium">{subcategory}
@@ -88,7 +88,7 @@ const FunctionList = () => {
                     ))}
                   </div>
                   <div>                     
-                    <p className="text-xs">{category.price}</p>
+                    <p className="text-xs dark:text-bgFooter">{category.price}</p>
                         
                   </div>
                 

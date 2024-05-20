@@ -8,16 +8,17 @@ import AutoScroll from "./AutoScroll";
 const  ChestDipDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <ChestDipVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Chest Dip</h1>
-                <p className="font-bold">₱2000</p>
+                <p className="font-bold">₱2,300</p>
               </div>           
-              <p className="mx-2 mt-2">Crunch Fitness aims to create a welcoming and energetic environment for members of all fitness levels, offering a variety of options to help individuals achieve their fitness goals.</p>
+              <p className="mx-2 mt-2">A chest dip is a compound exercise that primarily targets the muscles of the chest (pectorals), triceps, and shoulders.</p>
             </div>
           </div>
           <div>
@@ -30,7 +31,7 @@ const  ChestDipDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Jobert Camo
+                  Julius Dela Torre
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +44,7 @@ const  ChestDipDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    1hr 20 Minutes
+                    1hr 05 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -76,6 +77,7 @@ const  ChestDipDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

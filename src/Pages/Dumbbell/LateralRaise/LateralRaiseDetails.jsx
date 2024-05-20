@@ -8,16 +8,17 @@ import LateralRaiseVideo from "./LateralRaiseVideo";
 const  LateralRaiseDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <LateralRaiseVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Lateral Raise</h1>
-                <p className="font-bold">₱3500</p>
+                <p className="font-bold">₱2,400</p>
               </div>           
-              <p className="mx-2 mt-2">Step-Up is a versatile lower-body exercise that primarily targets the quadriceps, hamstrings, glutes, and calves. It also engages the core muscles for stability.</p>
+              <p className="mx-2 mt-2">The lateral raise is an effective exercise for targeting the lateral deltoids, helping to build shoulder width and strength. It often included in shoulder workouts or as part of an upper body strength training routine.</p>
             </div>
           </div>
           <div>
@@ -30,7 +31,7 @@ const  LateralRaiseDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                    Julius Dela Torre
+                  Alexa Dumo
                   </h1>
                 </div>                             
               </div>
@@ -43,7 +44,7 @@ const  LateralRaiseDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    2hr 50 Minutes
+                  1hr 10 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -56,7 +57,7 @@ const  LateralRaiseDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Easy
+                  Intermediate
                   </h2>
                 </div>                             
               </div>
@@ -76,6 +77,7 @@ const  LateralRaiseDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

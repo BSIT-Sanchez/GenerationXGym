@@ -8,14 +8,15 @@ import KettebellSwingVideo from "./KettebellSwingVideo";
 const  KettebellSwingDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <KettebellSwingVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Kettlebell Swing</h1>
-                <p className="font-bold">₱2100</p>
+                <p className="font-bold">₱2,100</p>
               </div>           
               <p className="mx-2 mt-2">Kettlebell Swing is a dynamic, full-body exercise that primarily targets the muscles of the posterior chain, including the glutes, hamstrings, and lower back, while also engaging the core, shoulders, and grip. </p>
             </div>
@@ -30,7 +31,7 @@ const  KettebellSwingDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                  Alexa Dumo
+                  Trevor Jace
                   </h1>
                 </div>                             
               </div>
@@ -76,6 +77,7 @@ const  KettebellSwingDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )
