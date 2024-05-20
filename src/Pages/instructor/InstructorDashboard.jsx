@@ -2,7 +2,7 @@ import { useState } from "react";
 import {Link} from "react-router-dom";
 import {useNavigate} from 'react-router-dom'
 
-const AdminDashboard = () => {
+const InstructorDashboard = () => {
   const navigate = useNavigate();
   const [toggle, setToggle] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(
@@ -28,8 +28,8 @@ const AdminDashboard = () => {
       </div>
       {
         toggle && (
-          <div className="absolute  top-[210px] bg-fontColor h-[60px] w-[200px] rounded-md flex justify-center items-center gap-2 ">
-            <Link to="https://bsit-sanchez.github.io/admindashboard/dashboard.html" className="hover:bg-[#a7f3d0] transition-all duration-300 ease-in-out p-1 rounded-sm">Admin Dashboard</Link>
+          <div className="absolute  top-[210px] bg-fontColor h-[60px] w-[250px] rounded-md flex justify-center items-center gap-2 ">
+            <Link to="https://bsit-sanchez.github.io/admindashboard/dashboard.html" className="hover:bg-[#a7f3d0] transition-all duration-300 ease-in-out p-1 rounded-sm">Instrutor Dashboard</Link>
             <button onClick={handleLogout} className="hover:bg-[#dc2626] transition-all duration-300 ease-in-out p-1 rounded-sm">logout</button> 
           </div>
         )
@@ -40,4 +40,4 @@ const AdminDashboard = () => {
   )
 }
 
-export default AdminDashboard
+export default InstructorDashboard

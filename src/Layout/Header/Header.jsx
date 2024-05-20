@@ -98,8 +98,8 @@ const Header = () => {
           <NavLink to='/Barbell' className={Hover}>Classes</NavLink>
           <NavLink to='/about' className={Hover}>About</NavLink>
           {User &&  (
-          <div className="flex justify-center items-center relative">
-            <NavLink to='/UserDashboard' className="">
+          <div className="flex justify-center items-center relative gap-1">
+            <NavLink to='https://bsit-sanchez.github.io/UserDashboard/tracking.html' className="">
             <img src="/images/profile.jpg" alt="profile" className="h-5 w-5 rounded-full object-cover cursor-pointer"/>
           
           </NavLink> 
@@ -158,9 +158,9 @@ const Header = () => {
                 </div>
                 
               { profile && (
-                <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md h-[5rem] w-[50%] p-2">
-                  <div>Dashboard</div>
-                  <button onClick={handleLogout}>logout</button>
+                <div className="absolute bg-bgHeader dark:text-bgFooter top-11 left-0 profile shadow-sm rounded-md h-[5rem] w-[50%] p-2 flex flex-col justify-start items-start">
+                  <NavLink to="https://bsit-sanchez.github.io/UserDashboard/tracking.html">Dashboard</NavLink>
+                  <button onClick={handleLogout} className="">logout</button>
                 </div>
               )} 
               </div>

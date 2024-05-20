@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import HomeScreen from './Pages/HomeScreen'
-import InstructorDashboard from './Pages/InstructorDashboard'
+
 import Login from './Pages/Login'
 import Register from './Pages/Register'
 import UpperList from './Pages/UpperList'
@@ -86,6 +86,9 @@ import HexPressDetails from './Pages/Machine/HexPress/HexPressDetails'
 import Sumo from './Pages/Machine/Sumo/Sumo'
 import SumoDetails from './Pages/Machine/Sumo/SumoDetails'
 import AdminDashboard from './Pages/admindashboard/AdminDashboard'
+import NotFound from './Pages/NotFound'
+import InstructorDashboard from './Pages/instructor/InstructorDashboard'
+
 
 
 
@@ -183,8 +186,10 @@ function App() {
       <Route path='/about' element={<AboutScreen/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
-      <Route path="AdminDashboard" element={<AdminDashboard/>}/>
-      <Route path='/instructorDashboard' element={<InstructorDashboard/>}/>
+      <Route path="/AdminDashboard" element={<AdminDashboard/>}/>
+      <Route path='/InstructorDashboard' element={<InstructorDashboard/>}/>
+      
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
   )
 }
