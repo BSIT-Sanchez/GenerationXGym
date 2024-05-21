@@ -27,16 +27,17 @@ const CalfRaise= () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <CalfRaiseImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Calf Raise</h1>
-                <p className="font-bold">₱4500</p>
+                <p className="font-bold">₱1,500</p>
               </div>           
-              <p className="mx-2 mt-2">Smith Squat is a variation of the traditional barbell squat performed using a Smith machine, which is a weight training machine featuring a barbell fixed within steel rails, allowing only vertical or near-vertical movement.</p>
+              <p className="mx-2 mt-2">Calf raises can be easily incorporated into any fitness routine and can be performed anywhere, making them a versatile exercise for overall lower leg development.</p>
             </div>
           </div>
           <div>
@@ -49,7 +50,7 @@ const CalfRaise= () => {
                 
                 <div>
                   <h1 className="font-medium">
-                  Trevor Jace
+                  Alexa Dumo
                   </h1>
                 </div>                             
               </div>
@@ -62,7 +63,7 @@ const CalfRaise= () => {
                 
                 <div>
                   <h2 className="font-medium">
-                  3hr 50 Minutes
+                  20 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -75,7 +76,7 @@ const CalfRaise= () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Hips
+                    Calves
                   </h2>
                 </div>                             
               </div>
@@ -106,7 +107,7 @@ const CalfRaise= () => {
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -122,10 +123,10 @@ const CalfRaise= () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/calfraise.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Calf Raise</h1>
-                <p>₱4500</p>
+                <p>₱1,500</p>
 
               </div>
             
@@ -166,6 +167,7 @@ const CalfRaise= () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

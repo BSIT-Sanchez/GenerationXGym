@@ -9,16 +9,17 @@ import RearLungeVideo from "./RearLungeVideo";
 const RearLungeDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <RearLungeVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Rear Lunge</h1>
-                <p className="font-bold">₱4500</p>
+                <p className="font-bold">₱4,300</p>
               </div>           
-              <p className="mx-2 mt-2">Smith Squat is a variation of the traditional barbell squat performed using a Smith machine, which is a weight training machine featuring a barbell fixed within steel rails, allowing only vertical or near-vertical movement.</p>
+              <p className="mx-2 mt-2">Rear lunges, also known as reverse lunges, are a lower body exercise that targets the muscles of the legs and glutes, particularly the quadriceps, hamstrings, and gluteus maximus.</p>
             </div>
           </div>
           <div>
@@ -31,7 +32,7 @@ const RearLungeDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                  Trevor Jace
+                  Jobert Camo
                   </h1>
                 </div>                             
               </div>
@@ -44,7 +45,7 @@ const RearLungeDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    3hr 50 Minutes
+                  50 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -77,6 +78,7 @@ const RearLungeDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )

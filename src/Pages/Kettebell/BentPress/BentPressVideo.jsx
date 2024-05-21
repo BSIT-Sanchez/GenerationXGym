@@ -11,7 +11,7 @@ function BentPressVideo() {
         autoPlay
         controls
         ref={videoRef}
-        src="/videos/stepup.mp4"
+        src="/videos/bentpress.mp4"
         className='w-full h-[20rem] 1xs:-mt-12 md:mt-0 rounded-sm'
       />
     

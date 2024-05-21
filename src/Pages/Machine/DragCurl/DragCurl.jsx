@@ -27,16 +27,17 @@ const DragCurl= () => {
   
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <DragCurlImage/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-8">
+            <div className="-mt-2 md:-mt-2 lg:-mt-8 dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Drag Curl</h1>
-                <p className="font-bold">₱4500</p>
+                <p className="font-bold">₱2,500</p>
               </div>           
-              <p className="mx-2 mt-2">Smith Squat is a variation of the traditional barbell squat performed using a Smith machine, which is a weight training machine featuring a barbell fixed within steel rails, allowing only vertical or near-vertical movement.</p>
+              <p className="mx-2 mt-2">The drag curl is a variation of the traditional bicep curl that emphasizes the long head of the biceps. It involves a unique movement pattern where the elbows move backward, creating a different angle of muscle engagement compared to regular curls.</p>
             </div>
           </div>
           <div>
@@ -62,7 +63,7 @@ const DragCurl= () => {
                 
                 <div>
                   <h2 className="font-medium">
-                  3hr 50 Minutes
+                  1hr 50 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -75,7 +76,7 @@ const DragCurl= () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    Hips
+                    Biceps
                   </h2>
                 </div>                             
               </div>
@@ -106,7 +107,7 @@ const DragCurl= () => {
                 </div>                             
               </div>
               <div className="flex mt-4 justify-center items-center ">
-              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center">Enroll Now</button>
+              <button onClick={handler}className="font-bold bg-bgFooter hover:bg-bgButton cursor-pointer p-2 rounded-md text-fontColor transition-all ease-in-out w-full text-center dark:bg-bgButton dark:hover:bg-bgFooter">Enroll Now</button>
               
             </div>
             </div>
@@ -122,10 +123,10 @@ const DragCurl= () => {
             </div> 
 
             <div className="flex gap-1 w-full justify-center items-center ">
-              <img src="/images/img1.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
+              <img src="/images/dragcurl.jpg" className="w-[50%] h-12 rounded-lg object-contain" alt="img1"/>
               <div className="w-full">
                 <h1>Drag Curl</h1>
-                <p>₱4500</p>
+                <p>₱2,500</p>
 
               </div>
             
@@ -166,6 +167,7 @@ const DragCurl= () => {
         }
 
         
+      </div>
       </div>
     </Layout>
   )

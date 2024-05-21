@@ -11,7 +11,7 @@ function SumoVideo() {
         autoPlay
         controls
         ref={videoRef}
-        src="/videos/smithsquat.mp4"
+        src="/videos/sumosquat.mp4"
         className='w-full h-[20rem] 1xs:-mt-12 md:mt-0 rounded-sm'
       />
     

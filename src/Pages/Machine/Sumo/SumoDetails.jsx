@@ -9,16 +9,17 @@ import SumoVideo from "./SumoVideo";
 const SumoDetails = () => { 
   return(
     <Layout>
+      <div className="dark:bg-bgFooter dark:text-bgFooter md:pb-16">
       <div className="container mx-auto adjustPadding pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <SumoVideo/>
-            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem]">
+            <div className="-mt-2 md:-mt-2 lg:-mt-[13rem] dark:text-fontColor">
               <div className="flex justify-between items-center mx-2 ">
                 <h1 className="font-bold">Sumo Squat</h1>
-                <p className="font-bold">₱4500</p>
+                <p className="font-bold">₱1,500</p>
               </div>           
-              <p className="mx-2 mt-2">Smith Squat is a variation of the traditional barbell squat performed using a Smith machine, which is a weight training machine featuring a barbell fixed within steel rails, allowing only vertical or near-vertical movement.</p>
+              <p className="mx-2 mt-2">The sumo squat is a variation of the traditional squat that targets the inner thighs (adductors), glutes, quadriceps, and hamstrings.</p>
             </div>
           </div>
           <div>
@@ -31,7 +32,7 @@ const SumoDetails = () => {
                 
                 <div>
                   <h1 className="font-medium">
-                  Trevor Jace
+                  Alexa Dumo
                   </h1>
                 </div>                             
               </div>
@@ -44,7 +45,7 @@ const SumoDetails = () => {
                 
                 <div>
                   <h2 className="font-medium">
-                    3hr 50 Minutes
+                  50 Minutes
                   </h2>
                 </div>                             
               </div>
@@ -77,6 +78,7 @@ const SumoDetails = () => {
         
 
         
+      </div>
       </div>
     </Layout>
   )
