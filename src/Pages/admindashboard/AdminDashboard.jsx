@@ -29,7 +29,7 @@ const AdminDashboard = () => {
       {
         toggle && (
           <div className="absolute  top-[210px] bg-fontColor h-[60px] w-[200px] rounded-md flex justify-center items-center gap-2 ">
-            <Link to="https://bsit-sanchez.github.io/admindashboard/dashboard.html" className="hover:bg-[#a7f3d0] transition-all duration-300 ease-in-out p-1 rounded-sm">Admin Dashboard</Link>
+            <Link to="https://bsit-sanchez.github.io/adminDashboard/dashboard.html" className="hover:bg-[#a7f3d0] transition-all duration-300 ease-in-out p-1 rounded-sm">Admin Dashboard</Link>
             <button onClick={handleLogout} className="hover:bg-[#dc2626] transition-all duration-300 ease-in-out p-1 rounded-sm">logout</button> 
           </div>
         )
